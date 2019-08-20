@@ -1,0 +1,16 @@
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\bin\Debug\Policlinica.Resurse.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\bin\Debug\Policlinica.Resurse.pdb
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.csprojAssemblyReference.cache
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.PoliclinicaResurse.resources
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.csproj.GenerateResource.cache
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.csproj.CoreCompileInputs.cache
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.pdb
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Resurse\bin\Debug\Policlinica.Resurse.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Resurse\bin\Debug\Policlinica.Resurse.pdb
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.csprojAssemblyReference.cache
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.PoliclinicaResurse.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.csproj.GenerateResource.cache
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.csproj.CoreCompileInputs.cache
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Resurse\obj\Debug\Policlinica.Resurse.pdb

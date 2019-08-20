@@ -1,0 +1,8 @@
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\bin\Release\Policlinica.Resurse.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\bin\Release\Policlinica.Resurse.pdb
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Release\Policlinica.Resurse.csprojAssemblyReference.cache
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Release\Policlinica.Resurse.PoliclinicaResurse.resources
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Release\Policlinica.Resurse.csproj.GenerateResource.cache
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Release\Policlinica.Resurse.csproj.CoreCompileInputs.cache
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Release\Policlinica.Resurse.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Resurse\obj\Release\Policlinica.Resurse.pdb

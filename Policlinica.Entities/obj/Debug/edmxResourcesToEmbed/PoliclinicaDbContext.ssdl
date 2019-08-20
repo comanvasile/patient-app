@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PoliclinicaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Policlinica.dbo.Adresa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Adresa">
+    <Key>
+      <PropertyRef Name="Fk_UnitateMedicalaId" />
+      <PropertyRef Name="Numar" />
+      <PropertyRef Name="Judet" />
+      <PropertyRef Name="Localitate" />
+    </Key>
+    <Property Name="Fk_UnitateMedicalaId" Type="int" Nullable="false" />
+    <Property Name="Numar" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Judet" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Localitate" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Adresa" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Policlinica.dbo.AsistentMedical' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AsistentMedical">
+    <Key>
+      <PropertyRef Name="Fk_UtilizatorId" />
+      <PropertyRef Name="Grad" />
+      <PropertyRef Name="Tip" />
+    </Key>
+    <Property Name="Fk_UtilizatorId" Type="int" Nullable="false" />
+    <Property Name="Grad" Type="int" Nullable="false" />
+    <Property Name="Tip" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BonuriFiscale">
+    <Key>
+      <PropertyRef Name="BonFiscalId" />
+    </Key>
+    <Property Name="BonFiscalId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DataEmitere" Type="datetime" Nullable="false" />
+    <Property Name="Fk_ProgramareId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Departament">
+    <Key>
+      <PropertyRef Name="DepartamentId" />
+    </Key>
+    <Property Name="DepartamentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nume" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Descriere" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="FunctiiDepartament">
+    <Key>
+      <PropertyRef Name="FunctieId" />
+    </Key>
+    <Property Name="FunctieId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Functie" Type="nvarchar" MaxLength="255" />
+    <Property Name="Fk_DepartamentId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Policlinica.dbo.LoginUser' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="LoginUser">
+    <Key>
+      <PropertyRef Name="Fk_UtilizatorId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Parola" />
+      <PropertyRef Name="DataInregistrare" />
+    </Key>
+    <Property Name="Fk_UtilizatorId" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Parola" Type="binary" MaxLength="64" Nullable="false" />
+    <Property Name="DataInregistrare" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Policlinica.dbo.Medic' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Medic">
+    <Key>
+      <PropertyRef Name="Fk_UtilizatorId" />
+      <PropertyRef Name="Grad" />
+      <PropertyRef Name="CodulDeParafa" />
+    </Key>
+    <Property Name="Fk_UtilizatorId" Type="int" Nullable="false" />
+    <Property Name="Grad" Type="int" Nullable="false" />
+    <Property Name="CodulDeParafa" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="TitlulStiintific" Type="int" />
+    <Property Name="PostulDidactic" Type="int" />
+    <Property Name="ProcentServicii" Type="decimal" Precision="3" Scale="2" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Policlinica.dbo.MedicSpecialitati' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MedicSpecialitati">
+    <Key>
+      <PropertyRef Name="Fk_MedicId" />
+      <PropertyRef Name="Fk_SpecialitateId" />
+    </Key>
+    <Property Name="Fk_MedicId" Type="int" Nullable="false" />
+    <Property Name="Fk_SpecialitateId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrarUnitateMedicala">
+    <Key>
+      <PropertyRef Name="OrarId" />
+    </Key>
+    <Property Name="OrarId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zi" Type="int" Nullable="false" />
+    <Property Name="OraDeschidere" Type="time" Precision="0" Nullable="false" />
+    <Property Name="OraInchidere" Type="time" Precision="0" Nullable="false" />
+    <Property Name="Fk_UnitateMedicalaId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrarUtilizatori">
+    <Key>
+      <PropertyRef Name="OrarId" />
+    </Key>
+    <Property Name="OrarId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zi" Type="int" Nullable="false" />
+    <Property Name="IncepreProgram" Type="time" Precision="0" Nullable="false" />
+    <Property Name="SfarsitProgram" Type="time" Precision="0" Nullable="false" />
+    <Property Name="DataZiSpeciala" Type="datetime" />
+    <Property Name="Fk_UtilizatorId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pacient">
+    <Key>
+      <PropertyRef Name="PacientId" />
+    </Key>
+    <Property Name="PacientId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nume" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Prenume" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="CNP" Type="nvarchar" MaxLength="13" Nullable="false" />
+    <Property Name="CardSanatate" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Ocupatie" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="ProceduriMedic">
+    <Key>
+      <PropertyRef Name="ProceduraMedicId" />
+    </Key>
+    <Property Name="ProceduraMedicId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nume" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Descriere" Type="nvarchar(max)" />
+    <Property Name="Fk_MedicId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProgramariServicii">
+    <Key>
+      <PropertyRef Name="ProgramareId" />
+    </Key>
+    <Property Name="ProgramareId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fk_PacientId" Type="int" Nullable="false" />
+    <Property Name="Fk_ReceptionerId" Type="int" Nullable="false" />
+    <Property Name="DataProgramare" Type="datetime" Nullable="false" />
+    <Property Name="Realizata" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Policlinica.dbo.RaportMedical' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="RaportMedical">
+    <Key>
+      <PropertyRef Name="Fk_ServiciuMedicalId" />
+      <PropertyRef Name="Status" />
+    </Key>
+    <Property Name="Fk_ServiciuMedicalId" Type="int" Nullable="false" />
+    <Property Name="NumePrenumeMedic" Type="nvarchar" MaxLength="255" />
+    <Property Name="NumePrenumePacient" Type="nvarchar" MaxLength="255" />
+    <Property Name="DataConsultatie" Type="datetime" />
+    <Property Name="Istoric" Type="nvarchar(max)" />
+    <Property Name="Simptome" Type="nvarchar(max)" />
+    <Property Name="Investigații" Type="nvarchar(max)" />
+    <Property Name="Diagnostic" Type="nvarchar(max)" />
+    <Property Name="Recomandări" Type="nvarchar(max)" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roluri">
+    <Key>
+      <PropertyRef Name="RolId" />
+    </Key>
+    <Property Name="RolId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nume" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Descriere" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ServiciiMedicale">
+    <Key>
+      <PropertyRef Name="ServiciuMedicalId" />
+    </Key>
+    <Property Name="ServiciuMedicalId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Competenta" Type="nvarchar(max)" />
+    <Property Name="Pret" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="Durata" Type="int" Nullable="false" />
+    <Property Name="Fk_UnitateMedicala" Type="int" Nullable="false" />
+    <Property Name="Fk_MedicId" Type="int" />
+    <Property Name="Fk_ProgramareId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Policlinica.dbo.SpecialitateServicii' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SpecialitateServicii">
+    <Key>
+      <PropertyRef Name="Fk_ServiciuMedicalId" />
+      <PropertyRef Name="Fk_SpecialitateId" />
+    </Key>
+    <Property Name="Fk_ServiciuMedicalId" Type="int" Nullable="false" />
+    <Property Name="Fk_SpecialitateId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Specialitati">
+    <Key>
+      <PropertyRef Name="SpecialitateId" />
+    </Key>
+    <Property Name="SpecialitateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nume" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Descriere" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="UnitateMedicala">
+    <Key>
+      <PropertyRef Name="UnitateMedicalaId" />
+    </Key>
+    <Property Name="UnitateMedicalaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Denumire" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="DescriereSrvicii" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Utilizatori">
+    <Key>
+      <PropertyRef Name="UtilizatorId" />
+    </Key>
+    <Property Name="UtilizatorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CNP" Type="nvarchar" MaxLength="13" Nullable="false" />
+    <Property Name="Nume" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Prenume" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="31" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="IBAN" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="NumarContract" Type="int" Nullable="false" />
+    <Property Name="DataAngajare" Type="date" Nullable="false" />
+    <Property Name="Salar" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="Fk_FunctieId" Type="int" Nullable="false" />
+    <Property Name="Fk_RolId" Type="int" Nullable="false" />
+    <Property Name="Fk_UnitateMedicalaId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Adresa__Fk_Unita__1273C1CD">
+    <End Role="UnitateMedicala" Type="Self.UnitateMedicala" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Adresa" Type="Self.Adresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitateMedicala">
+        <PropertyRef Name="UnitateMedicalaId" />
+      </Principal>
+      <Dependent Role="Adresa">
+        <PropertyRef Name="Fk_UnitateMedicalaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AsistentM__Fk_Ut__33D4B598">
+    <End Role="Utilizatori" Type="Self.Utilizatori" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AsistentMedical" Type="Self.AsistentMedical" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizatori">
+        <PropertyRef Name="UtilizatorId" />
+      </Principal>
+      <Dependent Role="AsistentMedical">
+        <PropertyRef Name="Fk_UtilizatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BonuriFis__Fk_Pr__3D5E1FD2">
+    <End Role="ProgramariServicii" Type="Self.ProgramariServicii" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BonuriFiscale" Type="Self.BonuriFiscale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProgramariServicii">
+        <PropertyRef Name="ProgramareId" />
+      </Principal>
+      <Dependent Role="BonuriFiscale">
+        <PropertyRef Name="Fk_ProgramareId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FunctiiDe__Fk_De__1A14E395">
+    <End Role="Departament" Type="Self.Departament" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FunctiiDepartament" Type="Self.FunctiiDepartament" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departament">
+        <PropertyRef Name="DepartamentId" />
+      </Principal>
+      <Dependent Role="FunctiiDepartament">
+        <PropertyRef Name="Fk_DepartamentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoginUser__Fk_Ut__5441852A">
+    <End Role="Utilizatori" Type="Self.Utilizatori" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="LoginUser" Type="Self.LoginUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizatori">
+        <PropertyRef Name="UtilizatorId" />
+      </Principal>
+      <Dependent Role="LoginUser">
+        <PropertyRef Name="Fk_UtilizatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Medic__Fk_Utiliz__286302EC">
+    <End Role="Utilizatori" Type="Self.Utilizatori" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Medic" Type="Self.Medic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizatori">
+        <PropertyRef Name="UtilizatorId" />
+      </Principal>
+      <Dependent Role="Medic">
+        <PropertyRef Name="Fk_UtilizatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__MedicSpec__Fk_Me__2D27B809' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__MedicSpec__Fk_Me__2D27B809" />-->
+  <Association Name="FK__MedicSpec__Fk_Sp__2E1BDC42">
+    <End Role="Specialitati" Type="Self.Specialitati" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MedicSpecialitati" Type="Self.MedicSpecialitati" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Specialitati">
+        <PropertyRef Name="SpecialitateId" />
+      </Principal>
+      <Dependent Role="MedicSpecialitati">
+        <PropertyRef Name="Fk_SpecialitateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrarUnita__Fk_Un__15502E78">
+    <End Role="UnitateMedicala" Type="Self.UnitateMedicala" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrarUnitateMedicala" Type="Self.OrarUnitateMedicala" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitateMedicala">
+        <PropertyRef Name="UnitateMedicalaId" />
+      </Principal>
+      <Dependent Role="OrarUnitateMedicala">
+        <PropertyRef Name="Fk_UnitateMedicalaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrarUtili__Fk_Ut__25869641">
+    <End Role="Utilizatori" Type="Self.Utilizatori" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrarUtilizatori" Type="Self.OrarUtilizatori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizatori">
+        <PropertyRef Name="UtilizatorId" />
+      </Principal>
+      <Dependent Role="OrarUtilizatori">
+        <PropertyRef Name="Fk_UtilizatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__Proceduri__Fk_Me__30F848ED' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__Proceduri__Fk_Me__30F848ED" />-->
+  <Association Name="FK__Programar__Fk_Pa__38996AB5">
+    <End Role="Pacient" Type="Self.Pacient" Multiplicity="1" />
+    <End Role="ProgramariServicii" Type="Self.ProgramariServicii" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pacient">
+        <PropertyRef Name="PacientId" />
+      </Principal>
+      <Dependent Role="ProgramariServicii">
+        <PropertyRef Name="Fk_PacientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Programar__Fk_Re__398D8EEE">
+    <End Role="Utilizatori" Type="Self.Utilizatori" Multiplicity="1" />
+    <End Role="ProgramariServicii" Type="Self.ProgramariServicii" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizatori">
+        <PropertyRef Name="UtilizatorId" />
+      </Principal>
+      <Dependent Role="ProgramariServicii">
+        <PropertyRef Name="Fk_ReceptionerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RaportMed__Fk_Se__440B1D61">
+    <End Role="ServiciiMedicale" Type="Self.ServiciiMedicale" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RaportMedical" Type="Self.RaportMedical" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiciiMedicale">
+        <PropertyRef Name="ServiciuMedicalId" />
+      </Principal>
+      <Dependent Role="RaportMedical">
+        <PropertyRef Name="Fk_ServiciuMedicalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__ServiciiM__Fk_Me__412EB0B6' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__ServiciiM__Fk_Me__412EB0B6" />-->
+  <Association Name="FK__ServiciiM__Fk_Pr__4222D4EF">
+    <End Role="ProgramariServicii" Type="Self.ProgramariServicii" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ServiciiMedicale" Type="Self.ServiciiMedicale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProgramariServicii">
+        <PropertyRef Name="ProgramareId" />
+      </Principal>
+      <Dependent Role="ServiciiMedicale">
+        <PropertyRef Name="Fk_ProgramareId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ServiciiM__Fk_Un__403A8C7D">
+    <End Role="UnitateMedicala" Type="Self.UnitateMedicala" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ServiciiMedicale" Type="Self.ServiciiMedicale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitateMedicala">
+        <PropertyRef Name="UnitateMedicalaId" />
+      </Principal>
+      <Dependent Role="ServiciiMedicale">
+        <PropertyRef Name="Fk_UnitateMedicala" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Specialit__Fk_Se__45F365D3">
+    <End Role="ServiciiMedicale" Type="Self.ServiciiMedicale" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SpecialitateServicii" Type="Self.SpecialitateServicii" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiciiMedicale">
+        <PropertyRef Name="ServiciuMedicalId" />
+      </Principal>
+      <Dependent Role="SpecialitateServicii">
+        <PropertyRef Name="Fk_ServiciuMedicalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Specialit__Fk_Sp__46E78A0C">
+    <End Role="Specialitati" Type="Self.Specialitati" Multiplicity="1" />
+    <End Role="SpecialitateServicii" Type="Self.SpecialitateServicii" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Specialitati">
+        <PropertyRef Name="SpecialitateId" />
+      </Principal>
+      <Dependent Role="SpecialitateServicii">
+        <PropertyRef Name="Fk_SpecialitateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Utilizato__Fk_Fu__20C1E124">
+    <End Role="FunctiiDepartament" Type="Self.FunctiiDepartament" Multiplicity="1" />
+    <End Role="Utilizatori" Type="Self.Utilizatori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FunctiiDepartament">
+        <PropertyRef Name="FunctieId" />
+      </Principal>
+      <Dependent Role="Utilizatori">
+        <PropertyRef Name="Fk_FunctieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Utilizato__Fk_Ro__21B6055D">
+    <End Role="Roluri" Type="Self.Roluri" Multiplicity="1" />
+    <End Role="Utilizatori" Type="Self.Utilizatori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roluri">
+        <PropertyRef Name="RolId" />
+      </Principal>
+      <Dependent Role="Utilizatori">
+        <PropertyRef Name="Fk_RolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Utilizato__Fk_Un__22AA2996">
+    <End Role="UnitateMedicala" Type="Self.UnitateMedicala" Multiplicity="1" />
+    <End Role="Utilizatori" Type="Self.Utilizatori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitateMedicala">
+        <PropertyRef Name="UnitateMedicalaId" />
+      </Principal>
+      <Dependent Role="Utilizatori">
+        <PropertyRef Name="Fk_UnitateMedicalaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PoliclinicaModelStoreContainer">
+    <EntitySet Name="BonuriFiscale" EntityType="Self.BonuriFiscale" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Departament" EntityType="Self.Departament" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FunctiiDepartament" EntityType="Self.FunctiiDepartament" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrarUnitateMedicala" EntityType="Self.OrarUnitateMedicala" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrarUtilizatori" EntityType="Self.OrarUtilizatori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pacient" EntityType="Self.Pacient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProceduriMedic" EntityType="Self.ProceduriMedic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProgramariServicii" EntityType="Self.ProgramariServicii" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roluri" EntityType="Self.Roluri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ServiciiMedicale" EntityType="Self.ServiciiMedicale" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Specialitati" EntityType="Self.Specialitati" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UnitateMedicala" EntityType="Self.UnitateMedicala" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Utilizatori" EntityType="Self.Utilizatori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Adresa" EntityType="Self.Adresa" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Adresa].[Fk_UnitateMedicalaId] AS [Fk_UnitateMedicalaId], 
+    [Adresa].[Numar] AS [Numar], 
+    [Adresa].[Judet] AS [Judet], 
+    [Adresa].[Localitate] AS [Localitate], 
+    [Adresa].[Adresa] AS [Adresa]
+    FROM [dbo].[Adresa] AS [Adresa]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AsistentMedical" EntityType="Self.AsistentMedical" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AsistentMedical].[Fk_UtilizatorId] AS [Fk_UtilizatorId], 
+    [AsistentMedical].[Grad] AS [Grad], 
+    [AsistentMedical].[Tip] AS [Tip]
+    FROM [dbo].[AsistentMedical] AS [AsistentMedical]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LoginUser" EntityType="Self.LoginUser" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LoginUser].[Fk_UtilizatorId] AS [Fk_UtilizatorId], 
+    [LoginUser].[UserName] AS [UserName], 
+    [LoginUser].[Parola] AS [Parola], 
+    [LoginUser].[DataInregistrare] AS [DataInregistrare]
+    FROM [dbo].[LoginUser] AS [LoginUser]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Medic" EntityType="Self.Medic" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Medic].[Fk_UtilizatorId] AS [Fk_UtilizatorId], 
+    [Medic].[Grad] AS [Grad], 
+    [Medic].[CodulDeParafa] AS [CodulDeParafa], 
+    [Medic].[TitlulStiintific] AS [TitlulStiintific], 
+    [Medic].[PostulDidactic] AS [PostulDidactic], 
+    [Medic].[ProcentServicii] AS [ProcentServicii]
+    FROM [dbo].[Medic] AS [Medic]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MedicSpecialitati" EntityType="Self.MedicSpecialitati" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MedicSpecialitati].[Fk_MedicId] AS [Fk_MedicId], 
+    [MedicSpecialitati].[Fk_SpecialitateId] AS [Fk_SpecialitateId]
+    FROM [dbo].[MedicSpecialitati] AS [MedicSpecialitati]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="RaportMedical" EntityType="Self.RaportMedical" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [RaportMedical].[Fk_ServiciuMedicalId] AS [Fk_ServiciuMedicalId], 
+    [RaportMedical].[NumePrenumeMedic] AS [NumePrenumeMedic], 
+    [RaportMedical].[NumePrenumePacient] AS [NumePrenumePacient], 
+    [RaportMedical].[DataConsultatie] AS [DataConsultatie], 
+    [RaportMedical].[Istoric] AS [Istoric], 
+    [RaportMedical].[Simptome] AS [Simptome], 
+    [RaportMedical].[Investigații] AS [Investigații], 
+    [RaportMedical].[Diagnostic] AS [Diagnostic], 
+    [RaportMedical].[Recomandări] AS [Recomandări], 
+    [RaportMedical].[Status] AS [Status]
+    FROM [dbo].[RaportMedical] AS [RaportMedical]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SpecialitateServicii" EntityType="Self.SpecialitateServicii" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SpecialitateServicii].[Fk_ServiciuMedicalId] AS [Fk_ServiciuMedicalId], 
+    [SpecialitateServicii].[Fk_SpecialitateId] AS [Fk_SpecialitateId]
+    FROM [dbo].[SpecialitateServicii] AS [SpecialitateServicii]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Adresa__Fk_Unita__1273C1CD" Association="Self.FK__Adresa__Fk_Unita__1273C1CD">
+      <End Role="UnitateMedicala" EntitySet="UnitateMedicala" />
+      <End Role="Adresa" EntitySet="Adresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AsistentM__Fk_Ut__33D4B598" Association="Self.FK__AsistentM__Fk_Ut__33D4B598">
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+      <End Role="AsistentMedical" EntitySet="AsistentMedical" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BonuriFis__Fk_Pr__3D5E1FD2" Association="Self.FK__BonuriFis__Fk_Pr__3D5E1FD2">
+      <End Role="ProgramariServicii" EntitySet="ProgramariServicii" />
+      <End Role="BonuriFiscale" EntitySet="BonuriFiscale" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FunctiiDe__Fk_De__1A14E395" Association="Self.FK__FunctiiDe__Fk_De__1A14E395">
+      <End Role="Departament" EntitySet="Departament" />
+      <End Role="FunctiiDepartament" EntitySet="FunctiiDepartament" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoginUser__Fk_Ut__5441852A" Association="Self.FK__LoginUser__Fk_Ut__5441852A">
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+      <End Role="LoginUser" EntitySet="LoginUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Medic__Fk_Utiliz__286302EC" Association="Self.FK__Medic__Fk_Utiliz__286302EC">
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+      <End Role="Medic" EntitySet="Medic" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MedicSpec__Fk_Sp__2E1BDC42" Association="Self.FK__MedicSpec__Fk_Sp__2E1BDC42">
+      <End Role="Specialitati" EntitySet="Specialitati" />
+      <End Role="MedicSpecialitati" EntitySet="MedicSpecialitati" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrarUnita__Fk_Un__15502E78" Association="Self.FK__OrarUnita__Fk_Un__15502E78">
+      <End Role="UnitateMedicala" EntitySet="UnitateMedicala" />
+      <End Role="OrarUnitateMedicala" EntitySet="OrarUnitateMedicala" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrarUtili__Fk_Ut__25869641" Association="Self.FK__OrarUtili__Fk_Ut__25869641">
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+      <End Role="OrarUtilizatori" EntitySet="OrarUtilizatori" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Programar__Fk_Pa__38996AB5" Association="Self.FK__Programar__Fk_Pa__38996AB5">
+      <End Role="Pacient" EntitySet="Pacient" />
+      <End Role="ProgramariServicii" EntitySet="ProgramariServicii" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Programar__Fk_Re__398D8EEE" Association="Self.FK__Programar__Fk_Re__398D8EEE">
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+      <End Role="ProgramariServicii" EntitySet="ProgramariServicii" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RaportMed__Fk_Se__440B1D61" Association="Self.FK__RaportMed__Fk_Se__440B1D61">
+      <End Role="ServiciiMedicale" EntitySet="ServiciiMedicale" />
+      <End Role="RaportMedical" EntitySet="RaportMedical" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiciiM__Fk_Pr__4222D4EF" Association="Self.FK__ServiciiM__Fk_Pr__4222D4EF">
+      <End Role="ProgramariServicii" EntitySet="ProgramariServicii" />
+      <End Role="ServiciiMedicale" EntitySet="ServiciiMedicale" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiciiM__Fk_Un__403A8C7D" Association="Self.FK__ServiciiM__Fk_Un__403A8C7D">
+      <End Role="UnitateMedicala" EntitySet="UnitateMedicala" />
+      <End Role="ServiciiMedicale" EntitySet="ServiciiMedicale" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Specialit__Fk_Se__45F365D3" Association="Self.FK__Specialit__Fk_Se__45F365D3">
+      <End Role="ServiciiMedicale" EntitySet="ServiciiMedicale" />
+      <End Role="SpecialitateServicii" EntitySet="SpecialitateServicii" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Specialit__Fk_Sp__46E78A0C" Association="Self.FK__Specialit__Fk_Sp__46E78A0C">
+      <End Role="Specialitati" EntitySet="Specialitati" />
+      <End Role="SpecialitateServicii" EntitySet="SpecialitateServicii" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Utilizato__Fk_Fu__20C1E124" Association="Self.FK__Utilizato__Fk_Fu__20C1E124">
+      <End Role="FunctiiDepartament" EntitySet="FunctiiDepartament" />
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Utilizato__Fk_Ro__21B6055D" Association="Self.FK__Utilizato__Fk_Ro__21B6055D">
+      <End Role="Roluri" EntitySet="Roluri" />
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Utilizato__Fk_Un__22AA2996" Association="Self.FK__Utilizato__Fk_Un__22AA2996">
+      <End Role="UnitateMedicala" EntitySet="UnitateMedicala" />
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

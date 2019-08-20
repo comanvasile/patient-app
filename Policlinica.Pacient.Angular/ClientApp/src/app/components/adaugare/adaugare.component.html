@@ -1,0 +1,74 @@
+
+<header>
+  <app-header [title]="title"></app-header>
+</header>
+<div class="add-programare-Container">
+
+
+  <mat-card>
+      
+    
+  
+      <mat-card-content *ngIf="addForm">
+        <form [formGroup]="addForm" class="addForm">
+          <mat-form-field>
+              <mat-icon matPrefix>search</mat-icon>
+
+            <mat-select placeholder="Select Medical Unit" formControlName="unitControl" (ngModelChange)="changeState($event)">
+              
+              <mat-option *ngFor="let unit of unitList" [value] ="unit.denumire">
+                {{unit.denumire}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field> 
+          <mat-form-field>
+              <mat-icon matPrefix>search</mat-icon>
+
+            <mat-select placeholder="Select Medic" formControlName="medicControl" (ngModelChange)="changeState2($event)">
+                
+              <mat-option *ngFor="let medic of medicList" [value]="medic">
+                {{medic}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field> 
+          <mat-form-field>
+            <mat-icon matPrefix>search</mat-icon>
+
+          <mat-select placeholder="Select Specialitate" formControlName="specialitateControl">
+              
+            <mat-option *ngFor="let specialitate of specialitatiList" [value]="specialitate">
+              {{specialitate}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field> 
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        
+
+          
+        <div class="24hr-example">
+            <mat-icon matPrefix>watch_later</mat-icon>
+          <input placeholder="24hr format" aria-label="24hr format" [ngxTimepicker]="fullTime" [format]="24"  readonly formControlName="timeControl">
+          <ngx-material-timepicker #fullTime></ngx-material-timepicker>
+     </div> 
+        
+
+        
+        </form>
+          
+
+      </mat-card-content>
+  </mat-card>
+  <div class="create-button">
+
+      <mat-card-actions class="createButtonPink" *ngIf="addForm">
+          <button id="button-text-blue" class="createOrCancel" mat-button (click)="cancel()">Cancel</button>
+          <button id="button-pink" class="createOrCancel" mat-button (click)="updateOrCreateProgramare()" [disabled]="!addForm.valid">{{buttonTitle}}</button>
+      </mat-card-actions>
+
+  </div>
+
+</div>

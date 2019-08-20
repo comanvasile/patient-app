@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PoliclinicaModelStoreContainer" CdmEntityContainer="PoliclinicaDataContext">
+    <EntitySetMapping Name="Adresa">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Adresa">
+        <MappingFragment StoreEntitySet="Adresa">
+          <ScalarProperty Name="Adresa1" ColumnName="Adresa" />
+          <ScalarProperty Name="Localitate" ColumnName="Localitate" />
+          <ScalarProperty Name="Judet" ColumnName="Judet" />
+          <ScalarProperty Name="Numar" ColumnName="Numar" />
+          <ScalarProperty Name="Fk_UnitateMedicalaId" ColumnName="Fk_UnitateMedicalaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsistentMedical">
+      <EntityTypeMapping TypeName="PoliclinicaModel.AsistentMedical">
+        <MappingFragment StoreEntitySet="AsistentMedical">
+          <ScalarProperty Name="Tip" ColumnName="Tip" />
+          <ScalarProperty Name="Grad" ColumnName="Grad" />
+          <ScalarProperty Name="Fk_UtilizatorId" ColumnName="Fk_UtilizatorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BonuriFiscale">
+      <EntityTypeMapping TypeName="PoliclinicaModel.BonuriFiscale">
+        <MappingFragment StoreEntitySet="BonuriFiscale">
+          <ScalarProperty Name="Fk_ProgramareId" ColumnName="Fk_ProgramareId" />
+          <ScalarProperty Name="DataEmitere" ColumnName="DataEmitere" />
+          <ScalarProperty Name="BonFiscalId" ColumnName="BonFiscalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departament">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Departament">
+        <MappingFragment StoreEntitySet="Departament">
+          <ScalarProperty Name="Descriere" ColumnName="Descriere" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="DepartamentId" ColumnName="DepartamentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FunctiiDepartament">
+      <EntityTypeMapping TypeName="PoliclinicaModel.FunctiiDepartament">
+        <MappingFragment StoreEntitySet="FunctiiDepartament">
+          <ScalarProperty Name="Fk_DepartamentId" ColumnName="Fk_DepartamentId" />
+          <ScalarProperty Name="Functie" ColumnName="Functie" />
+          <ScalarProperty Name="FunctieId" ColumnName="FunctieId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginUser">
+      <EntityTypeMapping TypeName="PoliclinicaModel.LoginUser">
+        <MappingFragment StoreEntitySet="LoginUser">
+          <ScalarProperty Name="DataInregistrare" ColumnName="DataInregistrare" />
+          <ScalarProperty Name="Parola" ColumnName="Parola" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Fk_UtilizatorId" ColumnName="Fk_UtilizatorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medic">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Medic">
+        <MappingFragment StoreEntitySet="Medic">
+          <ScalarProperty Name="ProcentServicii" ColumnName="ProcentServicii" />
+          <ScalarProperty Name="PostulDidactic" ColumnName="PostulDidactic" />
+          <ScalarProperty Name="TitlulStiintific" ColumnName="TitlulStiintific" />
+          <ScalarProperty Name="CodulDeParafa" ColumnName="CodulDeParafa" />
+          <ScalarProperty Name="Grad" ColumnName="Grad" />
+          <ScalarProperty Name="Fk_UtilizatorId" ColumnName="Fk_UtilizatorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrarUnitateMedicala">
+      <EntityTypeMapping TypeName="PoliclinicaModel.OrarUnitateMedicala">
+        <MappingFragment StoreEntitySet="OrarUnitateMedicala">
+          <ScalarProperty Name="Fk_UnitateMedicalaId" ColumnName="Fk_UnitateMedicalaId" />
+          <ScalarProperty Name="OraInchidere" ColumnName="OraInchidere" />
+          <ScalarProperty Name="OraDeschidere" ColumnName="OraDeschidere" />
+          <ScalarProperty Name="Zi" ColumnName="Zi" />
+          <ScalarProperty Name="OrarId" ColumnName="OrarId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrarUtilizatori">
+      <EntityTypeMapping TypeName="PoliclinicaModel.OrarUtilizatori">
+        <MappingFragment StoreEntitySet="OrarUtilizatori">
+          <ScalarProperty Name="IncepereProgram" ColumnName="IncepereProgram" />
+          <ScalarProperty Name="Fk_UtilizatorId" ColumnName="Fk_UtilizatorId" />
+          <ScalarProperty Name="DataZiSpeciala" ColumnName="DataZiSpeciala" />
+          <ScalarProperty Name="SfarsitProgram" ColumnName="SfarsitProgram" />
+          <ScalarProperty Name="Zi" ColumnName="Zi" />
+          <ScalarProperty Name="OrarId" ColumnName="OrarId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pacient">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Pacient">
+        <MappingFragment StoreEntitySet="Pacient">
+          <ScalarProperty Name="Ocupatie" ColumnName="Ocupatie" />
+          <ScalarProperty Name="CardSanatate" ColumnName="CardSanatate" />
+          <ScalarProperty Name="CNP" ColumnName="CNP" />
+          <ScalarProperty Name="Prenume" ColumnName="Prenume" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="PacientId" ColumnName="PacientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProceduriMedic">
+      <EntityTypeMapping TypeName="PoliclinicaModel.ProceduriMedic">
+        <MappingFragment StoreEntitySet="ProceduriMedic">
+          <ScalarProperty Name="Fk_MedicId" ColumnName="Fk_MedicId" />
+          <ScalarProperty Name="Descriere" ColumnName="Descriere" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="ProceduraMedicId" ColumnName="ProceduraMedicId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProgramariServicii">
+      <EntityTypeMapping TypeName="PoliclinicaModel.ProgramariServicii">
+        <MappingFragment StoreEntitySet="ProgramariServicii">
+          <ScalarProperty Name="Realizata" ColumnName="Realizata" />
+          <ScalarProperty Name="DataProgramare" ColumnName="DataProgramare" />
+          <ScalarProperty Name="Fk_ReceptionerId" ColumnName="Fk_ReceptionerId" />
+          <ScalarProperty Name="Fk_PacientId" ColumnName="Fk_PacientId" />
+          <ScalarProperty Name="ProgramareId" ColumnName="ProgramareId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RaportMedical">
+      <EntityTypeMapping TypeName="PoliclinicaModel.RaportMedical">
+        <MappingFragment StoreEntitySet="RaportMedical">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Recomandări" ColumnName="Recomandări" />
+          <ScalarProperty Name="Diagnostic" ColumnName="Diagnostic" />
+          <ScalarProperty Name="Investigații" ColumnName="Investigații" />
+          <ScalarProperty Name="Simptome" ColumnName="Simptome" />
+          <ScalarProperty Name="Istoric" ColumnName="Istoric" />
+          <ScalarProperty Name="DataConsultatie" ColumnName="DataConsultatie" />
+          <ScalarProperty Name="NumePrenumePacient" ColumnName="NumePrenumePacient" />
+          <ScalarProperty Name="NumePrenumeMedic" ColumnName="NumePrenumeMedic" />
+          <ScalarProperty Name="Fk_ServiciuMedicalId" ColumnName="Fk_ServiciuMedicalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roluri">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Roluri">
+        <MappingFragment StoreEntitySet="Roluri">
+          <ScalarProperty Name="Descriere" ColumnName="Descriere" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="RolId" ColumnName="RolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiciiMedicale">
+      <EntityTypeMapping TypeName="PoliclinicaModel.ServiciiMedicale">
+        <MappingFragment StoreEntitySet="ServiciiMedicale">
+          <ScalarProperty Name="Fk_ProgramareId" ColumnName="Fk_ProgramareId" />
+          <ScalarProperty Name="Fk_MedicId" ColumnName="Fk_MedicId" />
+          <ScalarProperty Name="Fk_UnitateMedicala" ColumnName="Fk_UnitateMedicala" />
+          <ScalarProperty Name="Durata" ColumnName="Durata" />
+          <ScalarProperty Name="Pret" ColumnName="Pret" />
+          <ScalarProperty Name="Competenta" ColumnName="Competenta" />
+          <ScalarProperty Name="ServiciuMedicalId" ColumnName="ServiciuMedicalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specialitati">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Specialitati">
+        <MappingFragment StoreEntitySet="Specialitati">
+          <ScalarProperty Name="Descriere" ColumnName="Descriere" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="SpecialitateId" ColumnName="SpecialitateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnitateMedicala">
+      <EntityTypeMapping TypeName="PoliclinicaModel.UnitateMedicala">
+        <MappingFragment StoreEntitySet="UnitateMedicala">
+          <ScalarProperty Name="DescriereSrvicii" ColumnName="DescriereSrvicii" />
+          <ScalarProperty Name="Denumire" ColumnName="Denumire" />
+          <ScalarProperty Name="UnitateMedicalaId" ColumnName="UnitateMedicalaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilizatori">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Utilizatori">
+        <MappingFragment StoreEntitySet="Utilizatori">
+          <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+          <ScalarProperty Name="Fk_UnitateMedicalaId" ColumnName="Fk_UnitateMedicalaId" />
+          <ScalarProperty Name="Fk_RolId" ColumnName="Fk_RolId" />
+          <ScalarProperty Name="Fk_FunctieId" ColumnName="Fk_FunctieId" />
+          <ScalarProperty Name="Salar" ColumnName="Salar" />
+          <ScalarProperty Name="DataAngajare" ColumnName="DataAngajare" />
+          <ScalarProperty Name="NumarContract" ColumnName="NumarContract" />
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Prenume" ColumnName="Prenume" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="CNP" ColumnName="CNP" />
+          <ScalarProperty Name="UtilizatorId" ColumnName="UtilizatorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MedicSpecialitati" TypeName="PoliclinicaModel.MedicSpecialitati" StoreEntitySet="MedicSpecialitati">
+      <EndProperty Name="Specialitati">
+        <ScalarProperty Name="SpecialitateId" ColumnName="Fk_SpecialitateId" />
+      </EndProperty>
+      <EndProperty Name="Medic">
+        <ScalarProperty Name="Fk_UtilizatorId" ColumnName="Fk_MedicId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="SpecialitateServicii" TypeName="PoliclinicaModel.SpecialitateServicii" StoreEntitySet="SpecialitateServicii">
+      <EndProperty Name="Specialitati">
+        <ScalarProperty Name="SpecialitateId" ColumnName="Fk_SpecialitateId" />
+      </EndProperty>
+      <EndProperty Name="ServiciiMedicale">
+        <ScalarProperty Name="ServiciuMedicalId" ColumnName="Fk_ServiciuMedicalId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="InsertMedicSpecialitati" FunctionName="PoliclinicaModel.Store.InsertMedicSpecialitati" />
+    <FunctionImportMapping FunctionImportName="DeleteFromMedicSpecialitati" FunctionName="PoliclinicaModel.Store.DeleteFromMedicSpecialitati" />
+    <FunctionImportMapping FunctionImportName="LoadSpecialitatiUnitate" FunctionName="PoliclinicaModel.Store.LoadSpecialitatiUnitate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PoliclinicaModel.LoadSpecialitatiUnitate_Result">
+          <ScalarProperty Name="SpecialitateId" ColumnName="SpecialitateId" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LoadMediciBySpecialitateId" FunctionName="PoliclinicaModel.Store.LoadMediciBySpecialitateId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PoliclinicaModel.LoadMediciBySpecialitateId_Result">
+          <ScalarProperty Name="Fk_UtilizatorId" ColumnName="Fk_UtilizatorId" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LoadPacientiMedic" FunctionName="PoliclinicaModel.Store.LoadPacientiMedic">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PoliclinicaModel.LoadPacientiMedic_Result">
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Prenume" ColumnName="Prenume" />
+          <ScalarProperty Name="CNP" ColumnName="CNP" />
+          <ScalarProperty Name="CardSanatate" ColumnName="CardSanatate" />
+          <ScalarProperty Name="PacientId" ColumnName="PacientId" />
+          <ScalarProperty Name="Ocupatie" ColumnName="Ocupatie" />
+          <ScalarProperty Name="DataProgramare" ColumnName="DataProgramare" />
+          <ScalarProperty Name="Realizata" ColumnName="Realizata" />
+          <ScalarProperty Name="Competenta" ColumnName="Competenta" />
+          <ScalarProperty Name="Durata" ColumnName="Durata" />
+          <ScalarProperty Name="Pret" ColumnName="Pret" />
+          <ScalarProperty Name="ServiciuMedicalId" ColumnName="ServiciuMedicalId" />
+          <ScalarProperty Name="Specialitate" ColumnName="Specialitate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LoadIstoricPacient" FunctionName="PoliclinicaModel.Store.LoadIstoricPacient">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PoliclinicaModel.LoadIstoricPacient_Result">
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Prenume" ColumnName="Prenume" />
+          <ScalarProperty Name="CNP" ColumnName="CNP" />
+          <ScalarProperty Name="CardSanatate" ColumnName="CardSanatate" />
+          <ScalarProperty Name="PacientId" ColumnName="PacientId" />
+          <ScalarProperty Name="Ocupatie" ColumnName="Ocupatie" />
+          <ScalarProperty Name="DataProgramare" ColumnName="DataProgramare" />
+          <ScalarProperty Name="Realizata" ColumnName="Realizata" />
+          <ScalarProperty Name="Competenta" ColumnName="Competenta" />
+          <ScalarProperty Name="Durata" ColumnName="Durata" />
+          <ScalarProperty Name="Pret" ColumnName="Pret" />
+          <ScalarProperty Name="ServiciuMedicalId" ColumnName="ServiciuMedicalId" />
+          <ScalarProperty Name="Specialitate" ColumnName="Specialitate" />
+          <ScalarProperty Name="NumePrenumeMedic" ColumnName="NumePrenumeMedic" />
+          <ScalarProperty Name="DataConsultatie" ColumnName="DataConsultatie" />
+          <ScalarProperty Name="Diagnostic" ColumnName="Diagnostic" />
+          <ScalarProperty Name="Investigații" ColumnName="Investigații" />
+          <ScalarProperty Name="Istoric" ColumnName="Istoric" />
+          <ScalarProperty Name="Simptome" ColumnName="Simptome" />
+          <ScalarProperty Name="StatusConsultatie" ColumnName="StatusConsultatie" />
+          <ScalarProperty Name="Recomandări" ColumnName="Recomandări" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertProgramariServicii" FunctionName="PoliclinicaModel.Store.InsertProgramariServicii" />
+    <FunctionImportMapping FunctionImportName="Cheltuieli" FunctionName="PoliclinicaModel.Store.Cheltuieli">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PoliclinicaModel.Cheltuieli_Result">
+          <ScalarProperty Name="UtilizatorId" ColumnName="UtilizatorId" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Prenume" ColumnName="Prenume" />
+          <ScalarProperty Name="DataAngajare" ColumnName="DataAngajare" />
+          <ScalarProperty Name="Salar" ColumnName="Salar" />
+          <ScalarProperty Name="ProcentServicii" ColumnName="ProcentServicii" />
+          <ScalarProperty Name="Functie" ColumnName="Functie" />
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Venituri" FunctionName="PoliclinicaModel.Store.Venituri">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PoliclinicaModel.Venituri_Result">
+          <ScalarProperty Name="UtilizatorId" ColumnName="UtilizatorId" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Prenume" ColumnName="Prenume" />
+          <ScalarProperty Name="DataAngajare" ColumnName="DataAngajare" />
+          <ScalarProperty Name="Grad" ColumnName="Grad" />
+          <ScalarProperty Name="PostulDidactic" ColumnName="PostulDidactic" />
+          <ScalarProperty Name="Durata" ColumnName="Durata" />
+          <ScalarProperty Name="Pret" ColumnName="Pret" />
+          <ScalarProperty Name="Specialitate" ColumnName="Specialitate" />
+          <ScalarProperty Name="DataProgramare" ColumnName="DataProgramare" />
+          <ScalarProperty Name="Realizata" ColumnName="Realizata" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SalariiMedic" FunctionName="PoliclinicaModel.Store.SalariiMedic">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PoliclinicaModel.SalariiMedic_Result">
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Prenume" ColumnName="Prenume" />
+          <ScalarProperty Name="DataAngajare" ColumnName="DataAngajare" />
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+          <ScalarProperty Name="Salar" ColumnName="Salar" />
+          <ScalarProperty Name="CodulDeParafa" ColumnName="CodulDeParafa" />
+          <ScalarProperty Name="ProcentServicii" ColumnName="ProcentServicii" />
+          <ScalarProperty Name="Pret" ColumnName="Pret" />
+          <ScalarProperty Name="DataProgramare" ColumnName="DataProgramare" />
+          <ScalarProperty Name="Specialitate" ColumnName="Specialitate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LoadPacientiAsistent" FunctionName="PoliclinicaModel.Store.LoadPacientiAsistent">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PoliclinicaModel.LoadPacientiAsistent_Result">
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Prenume" ColumnName="Prenume" />
+          <ScalarProperty Name="CNP" ColumnName="CNP" />
+          <ScalarProperty Name="CardSanatate" ColumnName="CardSanatate" />
+          <ScalarProperty Name="PacientId" ColumnName="PacientId" />
+          <ScalarProperty Name="Ocupatie" ColumnName="Ocupatie" />
+          <ScalarProperty Name="DataProgramare" ColumnName="DataProgramare" />
+          <ScalarProperty Name="Realizata" ColumnName="Realizata" />
+          <ScalarProperty Name="Competenta" ColumnName="Competenta" />
+          <ScalarProperty Name="Durata" ColumnName="Durata" />
+          <ScalarProperty Name="Pret" ColumnName="Pret" />
+          <ScalarProperty Name="ServiciuMedicalId" ColumnName="ServiciuMedicalId" />
+          <ScalarProperty Name="Specialitate" ColumnName="Specialitate" />
+          <ScalarProperty Name="NumeMedic" ColumnName="NumeMedic" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PoliclinicaModelStoreContainer" CdmEntityContainer="PoliclinicaEntities">
+    <EntitySetMapping Name="BonuriFiscale">
+      <EntityTypeMapping TypeName="PoliclinicaModel.BonuriFiscale">
+        <MappingFragment StoreEntitySet="BonuriFiscale">
+          <ScalarProperty Name="BonFiscalId" ColumnName="BonFiscalId" />
+          <ScalarProperty Name="DataEmitere" ColumnName="DataEmitere" />
+          <ScalarProperty Name="Fk_ProgramareId" ColumnName="Fk_ProgramareId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departament">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Departament">
+        <MappingFragment StoreEntitySet="Departament">
+          <ScalarProperty Name="DepartamentId" ColumnName="DepartamentId" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Descriere" ColumnName="Descriere" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FunctiiDepartament">
+      <EntityTypeMapping TypeName="PoliclinicaModel.FunctiiDepartament">
+        <MappingFragment StoreEntitySet="FunctiiDepartament">
+          <ScalarProperty Name="FunctieId" ColumnName="FunctieId" />
+          <ScalarProperty Name="Functie" ColumnName="Functie" />
+          <ScalarProperty Name="Fk_DepartamentId" ColumnName="Fk_DepartamentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrarUnitateMedicala">
+      <EntityTypeMapping TypeName="PoliclinicaModel.OrarUnitateMedicala">
+        <MappingFragment StoreEntitySet="OrarUnitateMedicala">
+          <ScalarProperty Name="OrarId" ColumnName="OrarId" />
+          <ScalarProperty Name="Zi" ColumnName="Zi" />
+          <ScalarProperty Name="OraDeschidere" ColumnName="OraDeschidere" />
+          <ScalarProperty Name="OraInchidere" ColumnName="OraInchidere" />
+          <ScalarProperty Name="Fk_UnitateMedicalaId" ColumnName="Fk_UnitateMedicalaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrarUtilizatori">
+      <EntityTypeMapping TypeName="PoliclinicaModel.OrarUtilizatori">
+        <MappingFragment StoreEntitySet="OrarUtilizatori">
+          <ScalarProperty Name="OrarId" ColumnName="OrarId" />
+          <ScalarProperty Name="Zi" ColumnName="Zi" />
+          <ScalarProperty Name="IncepreProgram" ColumnName="IncepreProgram" />
+          <ScalarProperty Name="SfarsitProgram" ColumnName="SfarsitProgram" />
+          <ScalarProperty Name="DataZiSpeciala" ColumnName="DataZiSpeciala" />
+          <ScalarProperty Name="Fk_UtilizatorId" ColumnName="Fk_UtilizatorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pacient">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Pacient">
+        <MappingFragment StoreEntitySet="Pacient">
+          <ScalarProperty Name="PacientId" ColumnName="PacientId" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Prenume" ColumnName="Prenume" />
+          <ScalarProperty Name="CNP" ColumnName="CNP" />
+          <ScalarProperty Name="CardSanatate" ColumnName="CardSanatate" />
+          <ScalarProperty Name="Ocupatie" ColumnName="Ocupatie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProgramariServicii">
+      <EntityTypeMapping TypeName="PoliclinicaModel.ProgramariServicii">
+        <MappingFragment StoreEntitySet="ProgramariServicii">
+          <ScalarProperty Name="ProgramareId" ColumnName="ProgramareId" />
+          <ScalarProperty Name="Fk_PacientId" ColumnName="Fk_PacientId" />
+          <ScalarProperty Name="Fk_ReceptionerId" ColumnName="Fk_ReceptionerId" />
+          <ScalarProperty Name="DataProgramare" ColumnName="DataProgramare" />
+          <ScalarProperty Name="Realizata" ColumnName="Realizata" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roluri">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Roluri">
+        <MappingFragment StoreEntitySet="Roluri">
+          <ScalarProperty Name="RolId" ColumnName="RolId" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Descriere" ColumnName="Descriere" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiciiMedicale">
+      <EntityTypeMapping TypeName="PoliclinicaModel.ServiciiMedicale">
+        <MappingFragment StoreEntitySet="ServiciiMedicale">
+          <ScalarProperty Name="ServiciuMedicalId" ColumnName="ServiciuMedicalId" />
+          <ScalarProperty Name="Competenta" ColumnName="Competenta" />
+          <ScalarProperty Name="Pret" ColumnName="Pret" />
+          <ScalarProperty Name="Durata" ColumnName="Durata" />
+          <ScalarProperty Name="Fk_UnitateMedicala" ColumnName="Fk_UnitateMedicala" />
+          <ScalarProperty Name="Fk_MedicId" ColumnName="Fk_MedicId" />
+          <ScalarProperty Name="Fk_ProgramareId" ColumnName="Fk_ProgramareId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specialitati">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Specialitati">
+        <MappingFragment StoreEntitySet="Specialitati">
+          <ScalarProperty Name="SpecialitateId" ColumnName="SpecialitateId" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Descriere" ColumnName="Descriere" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnitateMedicala">
+      <EntityTypeMapping TypeName="PoliclinicaModel.UnitateMedicala">
+        <MappingFragment StoreEntitySet="UnitateMedicala">
+          <ScalarProperty Name="UnitateMedicalaId" ColumnName="UnitateMedicalaId" />
+          <ScalarProperty Name="Denumire" ColumnName="Denumire" />
+          <ScalarProperty Name="DescriereSrvicii" ColumnName="DescriereSrvicii" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilizatori">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Utilizatori">
+        <MappingFragment StoreEntitySet="Utilizatori">
+          <ScalarProperty Name="UtilizatorId" ColumnName="UtilizatorId" />
+          <ScalarProperty Name="CNP" ColumnName="CNP" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Prenume" ColumnName="Prenume" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+          <ScalarProperty Name="NumarContract" ColumnName="NumarContract" />
+          <ScalarProperty Name="DataAngajare" ColumnName="DataAngajare" />
+          <ScalarProperty Name="Salar" ColumnName="Salar" />
+          <ScalarProperty Name="Fk_FunctieId" ColumnName="Fk_FunctieId" />
+          <ScalarProperty Name="Fk_RolId" ColumnName="Fk_RolId" />
+          <ScalarProperty Name="Fk_UnitateMedicalaId" ColumnName="Fk_UnitateMedicalaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adresa">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Adresa">
+        <MappingFragment StoreEntitySet="Adresa">
+          <ScalarProperty Name="Fk_UnitateMedicalaId" ColumnName="Fk_UnitateMedicalaId" />
+          <ScalarProperty Name="Numar" ColumnName="Numar" />
+          <ScalarProperty Name="Judet" ColumnName="Judet" />
+          <ScalarProperty Name="Localitate" ColumnName="Localitate" />
+          <ScalarProperty Name="Adresa1" ColumnName="Adresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsistentMedical">
+      <EntityTypeMapping TypeName="PoliclinicaModel.AsistentMedical">
+        <MappingFragment StoreEntitySet="AsistentMedical">
+          <ScalarProperty Name="Fk_UtilizatorId" ColumnName="Fk_UtilizatorId" />
+          <ScalarProperty Name="Grad" ColumnName="Grad" />
+          <ScalarProperty Name="Tip" ColumnName="Tip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginUser">
+      <EntityTypeMapping TypeName="PoliclinicaModel.LoginUser">
+        <MappingFragment StoreEntitySet="LoginUser">
+          <ScalarProperty Name="Fk_UtilizatorId" ColumnName="Fk_UtilizatorId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Parola" ColumnName="Parola" />
+          <ScalarProperty Name="DataInregistrare" ColumnName="DataInregistrare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medic">
+      <EntityTypeMapping TypeName="PoliclinicaModel.Medic">
+        <MappingFragment StoreEntitySet="Medic">
+          <ScalarProperty Name="Fk_UtilizatorId" ColumnName="Fk_UtilizatorId" />
+          <ScalarProperty Name="Grad" ColumnName="Grad" />
+          <ScalarProperty Name="CodulDeParafa" ColumnName="CodulDeParafa" />
+          <ScalarProperty Name="TitlulStiintific" ColumnName="TitlulStiintific" />
+          <ScalarProperty Name="PostulDidactic" ColumnName="PostulDidactic" />
+          <ScalarProperty Name="ProcentServicii" ColumnName="ProcentServicii" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicSpecialitati">
+      <EntityTypeMapping TypeName="PoliclinicaModel.MedicSpecialitati">
+        <MappingFragment StoreEntitySet="MedicSpecialitati">
+          <ScalarProperty Name="Fk_MedicId" ColumnName="Fk_MedicId" />
+          <ScalarProperty Name="Fk_SpecialitateId" ColumnName="Fk_SpecialitateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RaportMedical">
+      <EntityTypeMapping TypeName="PoliclinicaModel.RaportMedical">
+        <MappingFragment StoreEntitySet="RaportMedical">
+          <ScalarProperty Name="Fk_ServiciuMedicalId" ColumnName="Fk_ServiciuMedicalId" />
+          <ScalarProperty Name="NumePrenumeMedic" ColumnName="NumePrenumeMedic" />
+          <ScalarProperty Name="NumePrenumePacient" ColumnName="NumePrenumePacient" />
+          <ScalarProperty Name="DataConsultatie" ColumnName="DataConsultatie" />
+          <ScalarProperty Name="Istoric" ColumnName="Istoric" />
+          <ScalarProperty Name="Simptome" ColumnName="Simptome" />
+          <ScalarProperty Name="Investigații" ColumnName="Investigații" />
+          <ScalarProperty Name="Diagnostic" ColumnName="Diagnostic" />
+          <ScalarProperty Name="Recomandări" ColumnName="Recomandări" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="SpecialitateServicii" TypeName="PoliclinicaModel.SpecialitateServicii" StoreEntitySet="SpecialitateServicii">
+      <EndProperty Name="ServiciiMedicale">
+        <ScalarProperty Name="ServiciuMedicalId" ColumnName="Fk_ServiciuMedicalId" />
+      </EndProperty>
+      <EndProperty Name="Specialitati">
+        <ScalarProperty Name="SpecialitateId" ColumnName="Fk_SpecialitateId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="ProceduriMedic">
+      <EntityTypeMapping TypeName="PoliclinicaModel.ProceduriMedic">
+        <MappingFragment StoreEntitySet="ProceduriMedic">
+          <ScalarProperty Name="Fk_MedicId" ColumnName="Fk_MedicId" />
+          <ScalarProperty Name="Descriere" ColumnName="Descriere" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="ProceduraMedicId" ColumnName="ProceduraMedicId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

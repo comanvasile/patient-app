@@ -1,0 +1,52 @@
+D:\Programare C#\POLICLINICA\Policlinica.Entities\bin\Debug\Policlinica.Entities.dll.config
+D:\Programare C#\POLICLINICA\Policlinica.Entities\bin\Debug\Policlinica.Entities.dll
+D:\Programare C#\POLICLINICA\Policlinica.Entities\bin\Debug\Policlinica.Entities.pdb
+D:\Programare C#\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.dll
+D:\Programare C#\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programare C#\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.xml
+D:\Programare C#\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programare C#\POLICLINICA\Policlinica.Entities\obj\Debug\Policlinica.Entities.dll
+D:\Programare C#\POLICLINICA\Policlinica.Entities\obj\Debug\Policlinica.Entities.pdb
+D:\POLICLINICA\Policlinica.Entities\bin\Debug\Policlinica.Entities.dll.config
+D:\POLICLINICA\Policlinica.Entities\bin\Debug\Policlinica.Entities.dll
+D:\POLICLINICA\Policlinica.Entities\bin\Debug\Policlinica.Entities.pdb
+D:\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.dll
+D:\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.xml
+D:\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\POLICLINICA\Policlinica.Entities\obj\Debug\Policlinica.Entities.csproj.CoreCompileInputs.cache
+D:\POLICLINICA\Policlinica.Entities\obj\Debug\Policlinica.Entities.dll
+D:\POLICLINICA\Policlinica.Entities\obj\Debug\Policlinica.Entities.pdb
+C:\Users\Darius\Source\POLICLINICA\Policlinica.Entities\bin\Debug\Policlinica.Entities.dll.config
+C:\Users\Darius\Source\POLICLINICA\Policlinica.Entities\bin\Debug\Policlinica.Entities.dll
+C:\Users\Darius\Source\POLICLINICA\Policlinica.Entities\bin\Debug\Policlinica.Entities.pdb
+C:\Users\Darius\Source\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.dll
+C:\Users\Darius\Source\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Darius\Source\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.xml
+C:\Users\Darius\Source\POLICLINICA\Policlinica.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Darius\Source\POLICLINICA\Policlinica.Entities\obj\Debug\Policlinica.Entities.dll
+C:\Users\Darius\Source\POLICLINICA\Policlinica.Entities\obj\Debug\Policlinica.Entities.pdb
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Debug\Policlinica.Entities.dll.config
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Debug\Policlinica.Entities.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Debug\Policlinica.Entities.pdb
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Debug\EntityFramework.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Debug\EntityFramework.xml
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\obj\Debug\Policlinica.Entities.csproj.CoreCompileInputs.cache
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\obj\Debug\Policlinica.Entities.csproj.CopyComplete
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\obj\Debug\Policlinica.Entities.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\obj\Debug\Policlinica.Entities.pdb
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\obj\Debug\Policlinica.Entities.csprojAssemblyReference.cache
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\bin\Debug\Policlinica.Entities.dll.config
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\bin\Debug\Policlinica.Entities.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\bin\Debug\Policlinica.Entities.pdb
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\bin\Debug\EntityFramework.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\bin\Debug\EntityFramework.xml
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\obj\Debug\Policlinica.Entities.csprojAssemblyReference.cache
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\obj\Debug\Policlinica.Entities.csproj.CoreCompileInputs.cache
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\obj\Debug\Policlinica.Entities.csproj.CopyComplete
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\obj\Debug\Policlinica.Entities.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\Policlinica.Entities\obj\Debug\Policlinica.Entities.pdb

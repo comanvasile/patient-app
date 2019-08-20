@@ -1,0 +1,12 @@
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Release\Policlinica.Entities.dll.config
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Release\Policlinica.Entities.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Release\Policlinica.Entities.pdb
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Release\EntityFramework.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Release\EntityFramework.SqlServer.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Release\EntityFramework.xml
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\bin\Release\EntityFramework.SqlServer.xml
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\obj\Release\Policlinica.Entities.csprojAssemblyReference.cache
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\obj\Release\Policlinica.Entities.csproj.CoreCompileInputs.cache
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\obj\Release\Policlinica.Entities.csproj.CopyComplete
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\obj\Release\Policlinica.Entities.dll
+D:\Programare C#\Policlinica_IS\Policlinica.Entities\obj\Release\Policlinica.Entities.pdb

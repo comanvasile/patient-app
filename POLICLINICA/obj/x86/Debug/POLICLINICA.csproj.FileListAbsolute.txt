@@ -1,0 +1,221 @@
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.csprojResolveAssemblyReference.cache
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\POLICLINICA.exe.config
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\POLICLINICA.exe
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\POLICLINICA.pdb
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\cs\POLICLINICA.resources.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\EntityFramework.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Policlinica.Data.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Policlinica.Entities.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.GridView.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.RadDock.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Office2010Silver.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Office2013Light.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Dark.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.UI.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\TelerikCommon.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Policlinica.Data.pdb
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Policlinica.Entities.pdb
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\EntityFramework.xml
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.xml
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.GridView.xml
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.RadDock.xml
+D:\Programare C#\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.UI.xml
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.MainePoliclinica.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.Properties.Resources.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.BaseForm.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.LoginUser.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaUnitateMedicala.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaUtilizator.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaAsistentMedical.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaMedic.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaOrarUtilizatori.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaUtilizator.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlCreareCont.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.UnitateMedicala.FereastraAdaugaUnitateMedicala.cs.resources
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.csproj.GenerateResource.Cache
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.exe.licenses
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\cs\POLICLINICA.resources.dll
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.exe
+D:\Programare C#\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.pdb
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\POLICLINICA.exe.config
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\POLICLINICA.exe
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\POLICLINICA.pdb
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\cs\POLICLINICA.resources.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\EntityFramework.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Policlinica.Data.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Policlinica.Entities.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Policlinica.Resurse.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.GridView.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.RadDock.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Office2010Silver.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Office2013Light.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Dark.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\TelerikCommon.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Policlinica.Data.pdb
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Policlinica.Entities.pdb
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Policlinica.Resurse.pdb
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\EntityFramework.xml
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.xml
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.GridView.xml
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.RadDock.xml
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.csprojResolveAssemblyReference.cache
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.MainPoliclinica.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.Properties.Resources.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.BaseForm.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.LoginUser.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraActivitateMedic.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaPacienti.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaProgramare.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaSpecialitatiMedic.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraCompletareRaport.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraIstoricPacient.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraPacienti.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraVizualizareSalariiMedic.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.VizualizareProfit.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAngajati.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraEditareOrarUtilizator.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraVizualizareDatePersonale.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaUnitateMedicala.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaUtilizator.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaAsistentMedical.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaMedic.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaOrarUtilizatori.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaUtilizator.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlCreareCont.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.loadUtilizatoriControl.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.UnitateMedicala.FereastraAdaugaUnitateMedicala.cs.resources
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.csproj.GenerateResource.Cache
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.exe.licenses
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\cs\POLICLINICA.resources.dll
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.exe
+C:\Users\Darius\Source\POLICLINICA\POLICLINICA\obj\x86\Debug\POLICLINICA.pdb
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\POLICLINICA.exe.config
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\POLICLINICA.exe
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\POLICLINICA.pdb
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\cs\POLICLINICA.resources.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\EntityFramework.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Data.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Entities.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Resurse.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.GridView.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.RadDock.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Office2010Silver.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Office2013Light.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Dark.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.UI.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\TelerikCommon.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Data.pdb
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Data.dll.config
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Entities.pdb
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Entities.dll.config
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Resurse.pdb
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\EntityFramework.xml
+D:\Programare C#\Policlinica_IS\POLICLINICA\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.csprojAssemblyReference.cache
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.MainPoliclinica.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.Properties.Resources.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.BaseForm.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.LoginUser.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraActivitateMedic.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaPacienti.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaProgramare.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaSpecialitatiMedic.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraCompletareRaport.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraIstoricPacient.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraPacienti.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraVizualizareSalariiMedic.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.VizualizareProfit.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAngajati.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraEditareOrarUtilizator.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraVizualizareDatePersonale.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaUnitateMedicala.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaUtilizator.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaAsistentMedical.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaMedic.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaOrarUtilizatori.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaUtilizator.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlCreareCont.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.loadUtilizatoriControl.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.UnitateMedicala.FereastraAdaugaUnitateMedicala.cs.resources
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.csproj.GenerateResource.cache
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.exe.licenses
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.csproj.CoreCompileInputs.cache
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\cs\POLICLINICA.resources.dll
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.csproj.CopyComplete
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.exe
+D:\Programare C#\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.pdb
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\POLICLINICA.exe.config
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\POLICLINICA.exe
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\POLICLINICA.pdb
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\cs\POLICLINICA.resources.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\EntityFramework.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Data.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Entities.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Resurse.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.GridView.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.RadDock.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Office2010Silver.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.Office2013Light.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Dark.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Telerik.WinControls.UI.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\TelerikCommon.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Data.pdb
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Data.dll.config
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Entities.pdb
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Entities.dll.config
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\Policlinica.Resurse.pdb
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\EntityFramework.xml
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.csprojAssemblyReference.cache
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.MainPoliclinica.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.Properties.Resources.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.BaseForm.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.LoginUser.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraActivitateMedic.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaPacienti.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaProgramare.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaSpecialitatiMedic.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraCompletareRaport.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraIstoricPacient.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraPacienti.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraVizualizareSalariiMedic.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.VizualizareProfit.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAngajati.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraEditareOrarUtilizator.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraVizualizareDatePersonale.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaUnitateMedicala.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.FereastraAdaugaUtilizator.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaAsistentMedical.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaMedic.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaOrarUtilizatori.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlAdaugaUtilizator.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.controlCreareCont.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.loadUtilizatoriControl.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.UI.UnitateMedicala.FereastraAdaugaUnitateMedicala.cs.resources
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.csproj.GenerateResource.cache
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.exe.licenses
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.csproj.CoreCompileInputs.cache
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\cs\POLICLINICA.resources.dll
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.csproj.CopyComplete
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.exe
+C:\Darius\Facultate\IS\Laborator\Policlinica_IS\POLICLINICA\obj\x86\Debug\POLICLINICA.pdb

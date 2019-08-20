@@ -1,0 +1,51 @@
+
+<div class="mainDiv">
+  <header class="header">
+    <div class="card-head">
+      <h2 class="h2-head">Programari</h2>
+      <div id="buttons">
+        <button mat-button (click)="creeazaProgramare()" class="btn-head">
+
+          <i class="material-icons" mat-suffix>add</i>
+          <a style="color: #808080;">Adauga Programare</a>
+        </button>
+        <button mat-button (click)="logout()">
+          <i class="material-icons">power_settings_new</i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div>
+    <table mat-table [dataSource]="programariList" class="programari-table" width="100%">
+      <ng-container matColumnDef="unitName">
+        <th mat-header-cell *matHeaderCellDef> Unitate Medicala </th>
+        <td mat-cell *matCellDef="let element"> {{element.UnitateMedicala}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="specialitateName">
+        <th mat-header-cell *matHeaderCellDef> Specialitate </th>
+        <td mat-cell *matCellDef="let element"> {{element.Specialitate}} </td>
+      </ng-container>
+      <ng-container matColumnDef="medicName">
+        <th mat-header-cell *matHeaderCellDef> Medic </th>
+        <td mat-cell *matCellDef="let element"> {{element.Medic}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef> Data </th>
+        <td mat-cell *matCellDef="let element"> {{element.Data}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+          <i class="material-icons" id="btn-edit" (click)="updateCard(element)" mat-suffix>edit</i>
+
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns" class="test"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+</div>

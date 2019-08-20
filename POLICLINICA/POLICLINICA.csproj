@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0F443B9-2D91-46FA-920C-6D29C6923E2B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POLICLINICA</RootNamespace>
+    <AssemblyName>POLICLINICA</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Telerik.WinControls.Themes.Breeze.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Telerik.WinControls.Themes.Office2010Silver.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Telerik.WinControls.Themes.Office2013Light.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Telerik.WinControls.Themes.TelerikMetro.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Telerik.WinControls.Themes.TelerikMetroBlue.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Telerik.WinControls.Themes.TelerikMetroTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Telerik.WinControls.Themes.VisualStudio2012Dark.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainPoliclinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesagerie\Mesaje.cs" />
+    <Compile Include="Mesagerie\TextMesaje.cs" />
+    <Compile Include="Mesagerie\TipuriMesaje.cs" />
+    <Compile Include="RadForm1.Designer.cs">
+      <DependentUpon>MainPoliclinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseForm\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseForm\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Login\LoginUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Login\LoginUser.Designer.cs">
+      <DependentUpon>LoginUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraActivitateMedic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraActivitateMedic.Designer.cs">
+      <DependentUpon>FereastraActivitateMedic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraAdaugaPacienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraAdaugaPacienti.Designer.cs">
+      <DependentUpon>FereastraAdaugaPacienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraAdaugaProgramare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraAdaugaProgramare.Designer.cs">
+      <DependentUpon>FereastraAdaugaProgramare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraAdaugaSpecialitatiMedic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraAdaugaSpecialitatiMedic.Designer.cs">
+      <DependentUpon>FereastraAdaugaSpecialitatiMedic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraCompletareRaport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraCompletareRaport.Designer.cs">
+      <DependentUpon>FereastraCompletareRaport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraIstoricPacient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraIstoricPacient.Designer.cs">
+      <DependentUpon>FereastraIstoricPacient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraPacienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulActivitate\FereastraPacienti.Designer.cs">
+      <DependentUpon>FereastraPacienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulContabilitate\FereastraVizualizareSalariiMedic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulContabilitate\FereastraVizualizareSalariiMedic.Designer.cs">
+      <DependentUpon>FereastraVizualizareSalariiMedic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulContabilitate\VizualizareProfit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulContabilitate\VizualizareProfit.Designer.cs">
+      <DependentUpon>VizualizareProfit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulHR\FereastraAngajati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulHR\FereastraAngajati.Designer.cs">
+      <DependentUpon>FereastraAngajati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulHR\FereastraEditareOrarUtilizator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulHR\FereastraEditareOrarUtilizator.Designer.cs">
+      <DependentUpon>FereastraEditareOrarUtilizator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModulHR\FereastraVizualizareDatePersonale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModulHR\FereastraVizualizareDatePersonale.Designer.cs">
+      <DependentUpon>FereastraVizualizareDatePersonale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TimeEditor.cs" />
+    <Compile Include="UI\UnitateMedicala\FereastraAdaugaUnitateMedicala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UnitateMedicala\FereastraAdaugaUnitateMedicala.Designer.cs">
+      <DependentUpon>FereastraAdaugaUnitateMedicala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utilizatori\FereastraAdaugaUtilizator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Utilizatori\FereastraAdaugaUtilizator.Designer.cs">
+      <DependentUpon>FereastraAdaugaUtilizator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utilizatori\controlAdaugaAsistentMedical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Utilizatori\controlAdaugaAsistentMedical.Designer.cs">
+      <DependentUpon>controlAdaugaAsistentMedical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utilizatori\controlAdaugaMedic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Utilizatori\controlAdaugaMedic.Designer.cs">
+      <DependentUpon>controlAdaugaMedic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utilizatori\controlAdaugaOrarUtilizatori.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Utilizatori\controlAdaugaOrarUtilizatori.Designer.cs">
+      <DependentUpon>controlAdaugaOrarUtilizatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utilizatori\controlAdaugaUtilizator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Utilizatori\controlAdaugaUtilizator.Designer.cs">
+      <DependentUpon>controlAdaugaUtilizator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utilizatori\controlCreareCont.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Utilizatori\controlCreareCont.Designer.cs">
+      <DependentUpon>controlCreareCont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utilizatori\loadUtilizatoriControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Utilizatori\loadUtilizatoriControl.Designer.cs">
+      <DependentUpon>loadUtilizatoriControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainPoliclinica.resx">
+      <DependentUpon>MainPoliclinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\BaseForm\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Login\LoginUser.resx">
+      <DependentUpon>LoginUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulActivitate\FereastraActivitateMedic.resx">
+      <DependentUpon>FereastraActivitateMedic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulActivitate\FereastraAdaugaPacienti.resx">
+      <DependentUpon>FereastraAdaugaPacienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulActivitate\FereastraAdaugaProgramare.resx">
+      <DependentUpon>FereastraAdaugaProgramare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulActivitate\FereastraAdaugaSpecialitatiMedic.resx">
+      <DependentUpon>FereastraAdaugaSpecialitatiMedic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulActivitate\FereastraCompletareRaport.resx">
+      <DependentUpon>FereastraCompletareRaport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulActivitate\FereastraIstoricPacient.resx">
+      <DependentUpon>FereastraIstoricPacient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulActivitate\FereastraPacienti.resx">
+      <DependentUpon>FereastraPacienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulContabilitate\FereastraVizualizareSalariiMedic.resx">
+      <DependentUpon>FereastraVizualizareSalariiMedic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulContabilitate\VizualizareProfit.resx">
+      <DependentUpon>VizualizareProfit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulHR\FereastraAngajati.resx">
+      <DependentUpon>FereastraAngajati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulHR\FereastraEditareOrarUtilizator.resx">
+      <DependentUpon>FereastraEditareOrarUtilizator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModulHR\FereastraVizualizareDatePersonale.resx">
+      <DependentUpon>FereastraVizualizareDatePersonale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UnitateMedicala\FereastraAdaugaUnitateMedicala.cs.resx" />
+    <EmbeddedResource Include="UI\UnitateMedicala\FereastraAdaugaUnitateMedicala.resx">
+      <DependentUpon>FereastraAdaugaUnitateMedicala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Utilizatori\FereastraAdaugaUtilizator.resx">
+      <DependentUpon>FereastraAdaugaUtilizator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Utilizatori\controlAdaugaAsistentMedical.resx">
+      <DependentUpon>controlAdaugaAsistentMedical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Utilizatori\controlAdaugaMedic.resx">
+      <DependentUpon>controlAdaugaMedic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Utilizatori\controlAdaugaOrarUtilizatori.resx">
+      <DependentUpon>controlAdaugaOrarUtilizatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Utilizatori\controlAdaugaUtilizator.resx">
+      <DependentUpon>controlAdaugaUtilizator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Utilizatori\controlCreareCont.resx">
+      <DependentUpon>controlCreareCont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Utilizatori\loadUtilizatoriControl.resx">
+      <DependentUpon>loadUtilizatoriControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Policlinica.Entities.LoadIstoricPacient_Result.datasource" />
+    <None Include="Properties\DataSources\Policlinica.Entities.LoadPacientiMedic_Result.datasource" />
+    <None Include="Properties\DataSources\Policlinica.Entities.SalariiMedic_Result.datasource" />
+    <None Include="Properties\DataSources\Policlinica.Entities.Venituri_Result.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+    <ProjectReference Include="..\Policlinica.Data\Policlinica.Data.csproj">
+      <Project>{9a8b3cab-4c37-4b3b-9c82-fe05eda23406}</Project>
+      <Name>Policlinica.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Policlinica.Entities\Policlinica.Entities.csproj">
+      <Project>{4e3a2c2a-9e95-487f-bbcc-3db05d041eb2}</Project>
+      <Name>Policlinica.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Policlinica.Resurse\Policlinica.Resurse.csproj">
+      <Project>{c53196d4-8ad4-4c8f-9011-2f7be69c1edd}</Project>
+      <Name>Policlinica.Resurse</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

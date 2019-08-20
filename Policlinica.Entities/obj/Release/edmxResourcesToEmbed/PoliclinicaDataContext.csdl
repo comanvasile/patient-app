@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PoliclinicaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="PoliclinicaDataContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Adresa" EntityType="PoliclinicaModel.Adresa" />
+    <EntitySet Name="AsistentMedical" EntityType="PoliclinicaModel.AsistentMedical" />
+    <EntitySet Name="BonuriFiscale" EntityType="PoliclinicaModel.BonuriFiscale" />
+    <EntitySet Name="Departament" EntityType="PoliclinicaModel.Departament" />
+    <EntitySet Name="FunctiiDepartament" EntityType="PoliclinicaModel.FunctiiDepartament" />
+    <EntitySet Name="LoginUser" EntityType="PoliclinicaModel.LoginUser" />
+    <EntitySet Name="Medic" EntityType="PoliclinicaModel.Medic" />
+    <EntitySet Name="OrarUnitateMedicala" EntityType="PoliclinicaModel.OrarUnitateMedicala" />
+    <EntitySet Name="OrarUtilizatori" EntityType="PoliclinicaModel.OrarUtilizatori" />
+    <EntitySet Name="Pacient" EntityType="PoliclinicaModel.Pacient" />
+    <EntitySet Name="ProceduriMedic" EntityType="PoliclinicaModel.ProceduriMedic" />
+    <EntitySet Name="ProgramariServicii" EntityType="PoliclinicaModel.ProgramariServicii" />
+    <EntitySet Name="RaportMedical" EntityType="PoliclinicaModel.RaportMedical" />
+    <EntitySet Name="Roluri" EntityType="PoliclinicaModel.Roluri" />
+    <EntitySet Name="ServiciiMedicale" EntityType="PoliclinicaModel.ServiciiMedicale" />
+    <EntitySet Name="Specialitati" EntityType="PoliclinicaModel.Specialitati" />
+    <EntitySet Name="UnitateMedicala" EntityType="PoliclinicaModel.UnitateMedicala" />
+    <EntitySet Name="Utilizatori" EntityType="PoliclinicaModel.Utilizatori" />
+    <AssociationSet Name="FK__Adresa__Fk_Unita__1367E606" Association="PoliclinicaModel.FK__Adresa__Fk_Unita__1367E606">
+      <End Role="UnitateMedicala" EntitySet="UnitateMedicala" />
+      <End Role="Adresa" EntitySet="Adresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AsistentM__Fk_Ut__36B12243" Association="PoliclinicaModel.FK__AsistentM__Fk_Ut__36B12243">
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+      <End Role="AsistentMedical" EntitySet="AsistentMedical" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BonuriFis__Fk_Pr__403A8C7D" Association="PoliclinicaModel.FK__BonuriFis__Fk_Pr__403A8C7D">
+      <End Role="ProgramariServicii" EntitySet="ProgramariServicii" />
+      <End Role="BonuriFiscale" EntitySet="BonuriFiscale" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FunctiiDe__Fk_De__1B0907CE" Association="PoliclinicaModel.FK__FunctiiDe__Fk_De__1B0907CE">
+      <End Role="Departament" EntitySet="Departament" />
+      <End Role="FunctiiDepartament" EntitySet="FunctiiDepartament" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Utilizato__Fk_Fu__21B6055D" Association="PoliclinicaModel.FK__Utilizato__Fk_Fu__21B6055D">
+      <End Role="FunctiiDepartament" EntitySet="FunctiiDepartament" />
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoginUser__Fk_Ut__4E88ABD4" Association="PoliclinicaModel.FK__LoginUser__Fk_Ut__4E88ABD4">
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+      <End Role="LoginUser" EntitySet="LoginUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Medic__Fk_Utiliz__2A4B4B5E" Association="PoliclinicaModel.FK__Medic__Fk_Utiliz__2A4B4B5E">
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+      <End Role="Medic" EntitySet="Medic" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Proceduri__Fk_Me__32E0915F" Association="PoliclinicaModel.FK__Proceduri__Fk_Me__32E0915F">
+      <End Role="Medic" EntitySet="Medic" />
+      <End Role="ProceduriMedic" EntitySet="ProceduriMedic" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiciiM__Fk_Me__440B1D61" Association="PoliclinicaModel.FK__ServiciiM__Fk_Me__440B1D61">
+      <End Role="Medic" EntitySet="Medic" />
+      <End Role="ServiciiMedicale" EntitySet="ServiciiMedicale" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrarUnita__Fk_Un__164452B1" Association="PoliclinicaModel.FK__OrarUnita__Fk_Un__164452B1">
+      <End Role="UnitateMedicala" EntitySet="UnitateMedicala" />
+      <End Role="OrarUnitateMedicala" EntitySet="OrarUnitateMedicala" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrarUtili__Fk_Ut__267ABA7A" Association="PoliclinicaModel.FK__OrarUtili__Fk_Ut__267ABA7A">
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+      <End Role="OrarUtilizatori" EntitySet="OrarUtilizatori" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Programar__Fk_Pa__3B75D760" Association="PoliclinicaModel.FK__Programar__Fk_Pa__3B75D760">
+      <End Role="Pacient" EntitySet="Pacient" />
+      <End Role="ProgramariServicii" EntitySet="ProgramariServicii" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Programar__Fk_Re__3C69FB99" Association="PoliclinicaModel.FK__Programar__Fk_Re__3C69FB99">
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+      <End Role="ProgramariServicii" EntitySet="ProgramariServicii" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiciiM__Fk_Pr__44FF419A" Association="PoliclinicaModel.FK__ServiciiM__Fk_Pr__44FF419A">
+      <End Role="ProgramariServicii" EntitySet="ProgramariServicii" />
+      <End Role="ServiciiMedicale" EntitySet="ServiciiMedicale" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RaportMed__Fk_Se__47DBAE45" Association="PoliclinicaModel.FK__RaportMed__Fk_Se__47DBAE45">
+      <End Role="ServiciiMedicale" EntitySet="ServiciiMedicale" />
+      <End Role="RaportMedical" EntitySet="RaportMedical" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Utilizato__Fk_Ro__22AA2996" Association="PoliclinicaModel.FK__Utilizato__Fk_Ro__22AA2996">
+      <End Role="Roluri" EntitySet="Roluri" />
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiciiM__Fk_Un__4316F928" Association="PoliclinicaModel.FK__ServiciiM__Fk_Un__4316F928">
+      <End Role="UnitateMedicala" EntitySet="UnitateMedicala" />
+      <End Role="ServiciiMedicale" EntitySet="ServiciiMedicale" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Utilizato__Fk_Un__239E4DCF" Association="PoliclinicaModel.FK__Utilizato__Fk_Un__239E4DCF">
+      <End Role="UnitateMedicala" EntitySet="UnitateMedicala" />
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+    </AssociationSet>
+    <AssociationSet Name="MedicSpecialitati" Association="PoliclinicaModel.MedicSpecialitati">
+      <End Role="Medic" EntitySet="Medic" />
+      <End Role="Specialitati" EntitySet="Specialitati" />
+    </AssociationSet>
+    <AssociationSet Name="SpecialitateServicii" Association="PoliclinicaModel.SpecialitateServicii">
+      <End Role="ServiciiMedicale" EntitySet="ServiciiMedicale" />
+      <End Role="Specialitati" EntitySet="Specialitati" />
+    </AssociationSet>
+    <FunctionImport Name="LoginUserPoliclinica" ReturnType="Collection(PoliclinicaModel.LoginUserPoliclinica_Result)">
+      <Parameter Name="userName" Mode="In" Type="String" />
+      <Parameter Name="parola" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="LoadUtilizatori" ReturnType="Collection(PoliclinicaModel.LoadUtilizatori_Result)">
+      <Parameter Name="unitateMedicalaId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="InsertMedicSpecialitati">
+      <Parameter Name="medicId" Mode="In" Type="Int32" />
+      <Parameter Name="specialitateId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteFromMedicSpecialitati">
+      <Parameter Name="medicId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LoadSpecialitatiUnitate" ReturnType="Collection(PoliclinicaModel.LoadSpecialitatiUnitate_Result)">
+      <Parameter Name="unitateMedicalaId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LoadMediciBySpecialitateId" ReturnType="Collection(PoliclinicaModel.LoadMediciBySpecialitateId_Result)">
+      <Parameter Name="specialitateId" Mode="In" Type="Int32" />
+      <Parameter Name="unitateId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LoadPacientiMedic" ReturnType="Collection(PoliclinicaModel.LoadPacientiMedic_Result)">
+      <Parameter Name="azi" Mode="In" Type="Boolean" />
+      <Parameter Name="unitateMedicalaId" Mode="In" Type="Int32" />
+      <Parameter Name="medicId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LoadIstoricPacient" ReturnType="Collection(PoliclinicaModel.LoadIstoricPacient_Result)">
+      <Parameter Name="pacientId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="InsertProgramariServicii">
+      <Parameter Name="pacientId" Mode="In" Type="Int32" />
+      <Parameter Name="receptionerId" Mode="In" Type="Int32" />
+      <Parameter Name="dataProgramare" Mode="In" Type="DateTime" />
+      <Parameter Name="realizata" Mode="In" Type="Boolean" />
+      <Parameter Name="competenta" Mode="In" Type="String" />
+      <Parameter Name="pret" Mode="In" Type="Decimal" />
+      <Parameter Name="durata" Mode="In" Type="Int32" />
+      <Parameter Name="unitateMedicalaId" Mode="In" Type="Int32" />
+      <Parameter Name="medicId" Mode="In" Type="Int32" />
+      <Parameter Name="specialitateId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Cheltuieli" ReturnType="Collection(PoliclinicaModel.Cheltuieli_Result)">
+      <Parameter Name="an" Mode="In" Type="Int32" />
+      <Parameter Name="luna" Mode="In" Type="Int32" />
+      <Parameter Name="id_unitate" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Venituri" ReturnType="Collection(PoliclinicaModel.Venituri_Result)">
+      <Parameter Name="an" Mode="In" Type="Int32" />
+      <Parameter Name="luna" Mode="In" Type="Int32" />
+      <Parameter Name="id_unitate" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SalariiMedic" ReturnType="Collection(PoliclinicaModel.SalariiMedic_Result)">
+      <Parameter Name="an" Mode="In" Type="Int32" />
+      <Parameter Name="luna" Mode="In" Type="Int32" />
+      <Parameter Name="id_medic" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LoadPacientiAsistent" ReturnType="Collection(PoliclinicaModel.LoadPacientiAsistent_Result)">
+      <Parameter Name="azi" Mode="In" Type="Boolean" />
+      <Parameter Name="unitateMedicalaId" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Adresa">
+    <Key>
+      <PropertyRef Name="Fk_UnitateMedicalaId" />
+    </Key>
+    <Property Name="Fk_UnitateMedicalaId" Type="Int32" Nullable="false" />
+    <Property Name="Numar" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Judet" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Localitate" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Adresa1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UnitateMedicala" Relationship="PoliclinicaModel.FK__Adresa__Fk_Unita__1367E606" FromRole="Adresa" ToRole="UnitateMedicala" />
+  </EntityType>
+  <EntityType Name="AsistentMedical">
+    <Key>
+      <PropertyRef Name="Fk_UtilizatorId" />
+    </Key>
+    <Property Name="Fk_UtilizatorId" Type="Int32" Nullable="false" />
+    <Property Name="Grad" Type="Int32" Nullable="false" />
+    <Property Name="Tip" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Utilizatori" Relationship="PoliclinicaModel.FK__AsistentM__Fk_Ut__36B12243" FromRole="AsistentMedical" ToRole="Utilizatori" />
+  </EntityType>
+  <EntityType Name="BonuriFiscale">
+    <Key>
+      <PropertyRef Name="BonFiscalId" />
+    </Key>
+    <Property Name="BonFiscalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DataEmitere" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fk_ProgramareId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ProgramariServicii" Relationship="PoliclinicaModel.FK__BonuriFis__Fk_Pr__403A8C7D" FromRole="BonuriFiscale" ToRole="ProgramariServicii" />
+  </EntityType>
+  <EntityType Name="Departament">
+    <Key>
+      <PropertyRef Name="DepartamentId" />
+    </Key>
+    <Property Name="DepartamentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nume" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Descriere" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="FunctiiDepartament" Relationship="PoliclinicaModel.FK__FunctiiDe__Fk_De__1B0907CE" FromRole="Departament" ToRole="FunctiiDepartament" />
+  </EntityType>
+  <EntityType Name="FunctiiDepartament">
+    <Key>
+      <PropertyRef Name="FunctieId" />
+    </Key>
+    <Property Name="FunctieId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Functie" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Fk_DepartamentId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Departament" Relationship="PoliclinicaModel.FK__FunctiiDe__Fk_De__1B0907CE" FromRole="FunctiiDepartament" ToRole="Departament" />
+    <NavigationProperty Name="Utilizatori" Relationship="PoliclinicaModel.FK__Utilizato__Fk_Fu__21B6055D" FromRole="FunctiiDepartament" ToRole="Utilizatori" />
+  </EntityType>
+  <EntityType Name="LoginUser">
+    <Key>
+      <PropertyRef Name="Fk_UtilizatorId" />
+    </Key>
+    <Property Name="Fk_UtilizatorId" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Parola" Type="Binary" Nullable="false" MaxLength="64" FixedLength="true" />
+    <Property Name="DataInregistrare" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Utilizatori" Relationship="PoliclinicaModel.FK__LoginUser__Fk_Ut__4E88ABD4" FromRole="LoginUser" ToRole="Utilizatori" />
+  </EntityType>
+  <EntityType Name="Medic">
+    <Key>
+      <PropertyRef Name="Fk_UtilizatorId" />
+    </Key>
+    <Property Name="Fk_UtilizatorId" Type="Int32" Nullable="false" />
+    <Property Name="Grad" Type="Int32" Nullable="false" />
+    <Property Name="CodulDeParafa" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TitlulStiintific" Type="Int32" />
+    <Property Name="PostulDidactic" Type="Int32" />
+    <Property Name="ProcentServicii" Type="Decimal" Precision="5" Scale="2" />
+    <NavigationProperty Name="Utilizatori" Relationship="PoliclinicaModel.FK__Medic__Fk_Utiliz__2A4B4B5E" FromRole="Medic" ToRole="Utilizatori" />
+    <NavigationProperty Name="ProceduriMedic" Relationship="PoliclinicaModel.FK__Proceduri__Fk_Me__32E0915F" FromRole="Medic" ToRole="ProceduriMedic" />
+    <NavigationProperty Name="ServiciiMedicale" Relationship="PoliclinicaModel.FK__ServiciiM__Fk_Me__440B1D61" FromRole="Medic" ToRole="ServiciiMedicale" />
+    <NavigationProperty Name="Specialitati" Relationship="PoliclinicaModel.MedicSpecialitati" FromRole="Medic" ToRole="Specialitati" />
+  </EntityType>
+  <EntityType Name="OrarUnitateMedicala">
+    <Key>
+      <PropertyRef Name="OrarId" />
+    </Key>
+    <Property Name="OrarId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Zi" Type="Int32" Nullable="false" />
+    <Property Name="OraDeschidere" Type="Time" Nullable="false" Precision="0" />
+    <Property Name="OraInchidere" Type="Time" Nullable="false" Precision="0" />
+    <Property Name="Fk_UnitateMedicalaId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UnitateMedicala" Relationship="PoliclinicaModel.FK__OrarUnita__Fk_Un__164452B1" FromRole="OrarUnitateMedicala" ToRole="UnitateMedicala" />
+  </EntityType>
+  <EntityType Name="OrarUtilizatori">
+    <Key>
+      <PropertyRef Name="OrarId" />
+    </Key>
+    <Property Name="OrarId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Zi" Type="Int32" Nullable="false" />
+    <Property Name="SfarsitProgram" Type="Time" Nullable="false" Precision="0" />
+    <Property Name="DataZiSpeciala" Type="DateTime" Precision="3" />
+    <Property Name="Fk_UtilizatorId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Utilizatori" Relationship="PoliclinicaModel.FK__OrarUtili__Fk_Ut__267ABA7A" FromRole="OrarUtilizatori" ToRole="Utilizatori" />
+    <Property Name="IncepereProgram" Type="Time" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Pacient">
+    <Key>
+      <PropertyRef Name="PacientId" />
+    </Key>
+    <Property Name="PacientId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nume" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Prenume" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CNP" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Name="CardSanatate" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Ocupatie" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProgramariServicii" Relationship="PoliclinicaModel.FK__Programar__Fk_Pa__3B75D760" FromRole="Pacient" ToRole="ProgramariServicii" />
+  </EntityType>
+  <EntityType Name="ProceduriMedic">
+    <Key>
+      <PropertyRef Name="ProceduraMedicId" />
+    </Key>
+    <Property Name="ProceduraMedicId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nume" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Descriere" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Fk_MedicId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Medic" Relationship="PoliclinicaModel.FK__Proceduri__Fk_Me__32E0915F" FromRole="ProceduriMedic" ToRole="Medic" />
+  </EntityType>
+  <EntityType Name="ProgramariServicii">
+    <Key>
+      <PropertyRef Name="ProgramareId" />
+    </Key>
+    <Property Name="ProgramareId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fk_PacientId" Type="Int32" Nullable="false" />
+    <Property Name="Fk_ReceptionerId" Type="Int32" Nullable="false" />
+    <Property Name="DataProgramare" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Realizata" Type="Boolean" />
+    <NavigationProperty Name="BonuriFiscale" Relationship="PoliclinicaModel.FK__BonuriFis__Fk_Pr__403A8C7D" FromRole="ProgramariServicii" ToRole="BonuriFiscale" />
+    <NavigationProperty Name="Pacient" Relationship="PoliclinicaModel.FK__Programar__Fk_Pa__3B75D760" FromRole="ProgramariServicii" ToRole="Pacient" />
+    <NavigationProperty Name="Utilizatori" Relationship="PoliclinicaModel.FK__Programar__Fk_Re__3C69FB99" FromRole="ProgramariServicii" ToRole="Utilizatori" />
+    <NavigationProperty Name="ServiciiMedicale" Relationship="PoliclinicaModel.FK__ServiciiM__Fk_Pr__44FF419A" FromRole="ProgramariServicii" ToRole="ServiciiMedicale" />
+  </EntityType>
+  <EntityType Name="RaportMedical">
+    <Key>
+      <PropertyRef Name="Fk_ServiciuMedicalId" />
+    </Key>
+    <Property Name="Fk_ServiciuMedicalId" Type="Int32" Nullable="false" />
+    <Property Name="NumePrenumeMedic" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NumePrenumePacient" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DataConsultatie" Type="DateTime" Precision="3" />
+    <Property Name="Istoric" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Simptome" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Investigații" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Diagnostic" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Recomandări" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ServiciiMedicale" Relationship="PoliclinicaModel.FK__RaportMed__Fk_Se__47DBAE45" FromRole="RaportMedical" ToRole="ServiciiMedicale" />
+  </EntityType>
+  <EntityType Name="Roluri">
+    <Key>
+      <PropertyRef Name="RolId" />
+    </Key>
+    <Property Name="RolId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nume" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Descriere" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Utilizatori" Relationship="PoliclinicaModel.FK__Utilizato__Fk_Ro__22AA2996" FromRole="Roluri" ToRole="Utilizatori" />
+  </EntityType>
+  <EntityType Name="ServiciiMedicale">
+    <Key>
+      <PropertyRef Name="ServiciuMedicalId" />
+    </Key>
+    <Property Name="ServiciuMedicalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Competenta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Pret" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Durata" Type="Int32" Nullable="false" />
+    <Property Name="Fk_UnitateMedicala" Type="Int32" Nullable="false" />
+    <Property Name="Fk_MedicId" Type="Int32" />
+    <Property Name="Fk_ProgramareId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Medic" Relationship="PoliclinicaModel.FK__ServiciiM__Fk_Me__440B1D61" FromRole="ServiciiMedicale" ToRole="Medic" />
+    <NavigationProperty Name="ProgramariServicii" Relationship="PoliclinicaModel.FK__ServiciiM__Fk_Pr__44FF419A" FromRole="ServiciiMedicale" ToRole="ProgramariServicii" />
+    <NavigationProperty Name="RaportMedical" Relationship="PoliclinicaModel.FK__RaportMed__Fk_Se__47DBAE45" FromRole="ServiciiMedicale" ToRole="RaportMedical" />
+    <NavigationProperty Name="UnitateMedicala" Relationship="PoliclinicaModel.FK__ServiciiM__Fk_Un__4316F928" FromRole="ServiciiMedicale" ToRole="UnitateMedicala" />
+    <NavigationProperty Name="Specialitati" Relationship="PoliclinicaModel.SpecialitateServicii" FromRole="ServiciiMedicale" ToRole="Specialitati" />
+  </EntityType>
+  <EntityType Name="Specialitati">
+    <Key>
+      <PropertyRef Name="SpecialitateId" />
+    </Key>
+    <Property Name="SpecialitateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nume" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Descriere" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Medic" Relationship="PoliclinicaModel.MedicSpecialitati" FromRole="Specialitati" ToRole="Medic" />
+    <NavigationProperty Name="ServiciiMedicale" Relationship="PoliclinicaModel.SpecialitateServicii" FromRole="Specialitati" ToRole="ServiciiMedicale" />
+  </EntityType>
+  <EntityType Name="UnitateMedicala">
+    <Key>
+      <PropertyRef Name="UnitateMedicalaId" />
+    </Key>
+    <Property Name="UnitateMedicalaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Denumire" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DescriereSrvicii" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Adresa" Relationship="PoliclinicaModel.FK__Adresa__Fk_Unita__1367E606" FromRole="UnitateMedicala" ToRole="Adresa" />
+    <NavigationProperty Name="OrarUnitateMedicala" Relationship="PoliclinicaModel.FK__OrarUnita__Fk_Un__164452B1" FromRole="UnitateMedicala" ToRole="OrarUnitateMedicala" />
+    <NavigationProperty Name="ServiciiMedicale" Relationship="PoliclinicaModel.FK__ServiciiM__Fk_Un__4316F928" FromRole="UnitateMedicala" ToRole="ServiciiMedicale" />
+    <NavigationProperty Name="Utilizatori" Relationship="PoliclinicaModel.FK__Utilizato__Fk_Un__239E4DCF" FromRole="UnitateMedicala" ToRole="Utilizatori" />
+  </EntityType>
+  <EntityType Name="Utilizatori">
+    <Key>
+      <PropertyRef Name="UtilizatorId" />
+    </Key>
+    <Property Name="UtilizatorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CNP" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Name="Nume" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Prenume" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="String" Nullable="false" MaxLength="31" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IBAN" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NumarContract" Type="Int32" Nullable="false" />
+    <Property Name="DataAngajare" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Salar" Type="Decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Fk_FunctieId" Type="Int32" Nullable="false" />
+    <Property Name="Fk_RolId" Type="Int32" Nullable="false" />
+    <Property Name="Fk_UnitateMedicalaId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AsistentMedical" Relationship="PoliclinicaModel.FK__AsistentM__Fk_Ut__36B12243" FromRole="Utilizatori" ToRole="AsistentMedical" />
+    <NavigationProperty Name="FunctiiDepartament" Relationship="PoliclinicaModel.FK__Utilizato__Fk_Fu__21B6055D" FromRole="Utilizatori" ToRole="FunctiiDepartament" />
+    <NavigationProperty Name="LoginUser" Relationship="PoliclinicaModel.FK__LoginUser__Fk_Ut__4E88ABD4" FromRole="Utilizatori" ToRole="LoginUser" />
+    <NavigationProperty Name="Medic" Relationship="PoliclinicaModel.FK__Medic__Fk_Utiliz__2A4B4B5E" FromRole="Utilizatori" ToRole="Medic" />
+    <NavigationProperty Name="OrarUtilizatori" Relationship="PoliclinicaModel.FK__OrarUtili__Fk_Ut__267ABA7A" FromRole="Utilizatori" ToRole="OrarUtilizatori" />
+    <NavigationProperty Name="ProgramariServicii" Relationship="PoliclinicaModel.FK__Programar__Fk_Re__3C69FB99" FromRole="Utilizatori" ToRole="ProgramariServicii" />
+    <NavigationProperty Name="Roluri" Relationship="PoliclinicaModel.FK__Utilizato__Fk_Ro__22AA2996" FromRole="Utilizatori" ToRole="Roluri" />
+    <NavigationProperty Name="UnitateMedicala" Relationship="PoliclinicaModel.FK__Utilizato__Fk_Un__239E4DCF" FromRole="Utilizatori" ToRole="UnitateMedicala" />
+    <Property Name="Adresa" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK__Adresa__Fk_Unita__1367E606">
+    <End Type="PoliclinicaModel.UnitateMedicala" Role="UnitateMedicala" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.Adresa" Role="Adresa" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="UnitateMedicala">
+        <PropertyRef Name="UnitateMedicalaId" />
+      </Principal>
+      <Dependent Role="Adresa">
+        <PropertyRef Name="Fk_UnitateMedicalaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AsistentM__Fk_Ut__36B12243">
+    <End Type="PoliclinicaModel.Utilizatori" Role="Utilizatori" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.AsistentMedical" Role="AsistentMedical" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizatori">
+        <PropertyRef Name="UtilizatorId" />
+      </Principal>
+      <Dependent Role="AsistentMedical">
+        <PropertyRef Name="Fk_UtilizatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BonuriFis__Fk_Pr__403A8C7D">
+    <End Type="PoliclinicaModel.ProgramariServicii" Role="ProgramariServicii" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.BonuriFiscale" Role="BonuriFiscale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProgramariServicii">
+        <PropertyRef Name="ProgramareId" />
+      </Principal>
+      <Dependent Role="BonuriFiscale">
+        <PropertyRef Name="Fk_ProgramareId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FunctiiDe__Fk_De__1B0907CE">
+    <End Type="PoliclinicaModel.Departament" Role="Departament" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.FunctiiDepartament" Role="FunctiiDepartament" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departament">
+        <PropertyRef Name="DepartamentId" />
+      </Principal>
+      <Dependent Role="FunctiiDepartament">
+        <PropertyRef Name="Fk_DepartamentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Utilizato__Fk_Fu__21B6055D">
+    <End Type="PoliclinicaModel.FunctiiDepartament" Role="FunctiiDepartament" Multiplicity="1" />
+    <End Type="PoliclinicaModel.Utilizatori" Role="Utilizatori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FunctiiDepartament">
+        <PropertyRef Name="FunctieId" />
+      </Principal>
+      <Dependent Role="Utilizatori">
+        <PropertyRef Name="Fk_FunctieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoginUser__Fk_Ut__4E88ABD4">
+    <End Type="PoliclinicaModel.Utilizatori" Role="Utilizatori" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.LoginUser" Role="LoginUser" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizatori">
+        <PropertyRef Name="UtilizatorId" />
+      </Principal>
+      <Dependent Role="LoginUser">
+        <PropertyRef Name="Fk_UtilizatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Medic__Fk_Utiliz__2A4B4B5E">
+    <End Type="PoliclinicaModel.Utilizatori" Role="Utilizatori" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.Medic" Role="Medic" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizatori">
+        <PropertyRef Name="UtilizatorId" />
+      </Principal>
+      <Dependent Role="Medic">
+        <PropertyRef Name="Fk_UtilizatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Proceduri__Fk_Me__32E0915F">
+    <End Type="PoliclinicaModel.Medic" Role="Medic" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.ProceduriMedic" Role="ProceduriMedic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medic">
+        <PropertyRef Name="Fk_UtilizatorId" />
+      </Principal>
+      <Dependent Role="ProceduriMedic">
+        <PropertyRef Name="Fk_MedicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ServiciiM__Fk_Me__440B1D61">
+    <End Type="PoliclinicaModel.Medic" Role="Medic" Multiplicity="0..1" />
+    <End Type="PoliclinicaModel.ServiciiMedicale" Role="ServiciiMedicale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medic">
+        <PropertyRef Name="Fk_UtilizatorId" />
+      </Principal>
+      <Dependent Role="ServiciiMedicale">
+        <PropertyRef Name="Fk_MedicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrarUnita__Fk_Un__164452B1">
+    <End Type="PoliclinicaModel.UnitateMedicala" Role="UnitateMedicala" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.OrarUnitateMedicala" Role="OrarUnitateMedicala" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitateMedicala">
+        <PropertyRef Name="UnitateMedicalaId" />
+      </Principal>
+      <Dependent Role="OrarUnitateMedicala">
+        <PropertyRef Name="Fk_UnitateMedicalaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrarUtili__Fk_Ut__267ABA7A">
+    <End Type="PoliclinicaModel.Utilizatori" Role="Utilizatori" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.OrarUtilizatori" Role="OrarUtilizatori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizatori">
+        <PropertyRef Name="UtilizatorId" />
+      </Principal>
+      <Dependent Role="OrarUtilizatori">
+        <PropertyRef Name="Fk_UtilizatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Programar__Fk_Pa__3B75D760">
+    <End Type="PoliclinicaModel.Pacient" Role="Pacient" Multiplicity="1" />
+    <End Type="PoliclinicaModel.ProgramariServicii" Role="ProgramariServicii" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pacient">
+        <PropertyRef Name="PacientId" />
+      </Principal>
+      <Dependent Role="ProgramariServicii">
+        <PropertyRef Name="Fk_PacientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Programar__Fk_Re__3C69FB99">
+    <End Type="PoliclinicaModel.Utilizatori" Role="Utilizatori" Multiplicity="1" />
+    <End Type="PoliclinicaModel.ProgramariServicii" Role="ProgramariServicii" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizatori">
+        <PropertyRef Name="UtilizatorId" />
+      </Principal>
+      <Dependent Role="ProgramariServicii">
+        <PropertyRef Name="Fk_ReceptionerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ServiciiM__Fk_Pr__44FF419A">
+    <End Type="PoliclinicaModel.ProgramariServicii" Role="ProgramariServicii" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.ServiciiMedicale" Role="ServiciiMedicale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProgramariServicii">
+        <PropertyRef Name="ProgramareId" />
+      </Principal>
+      <Dependent Role="ServiciiMedicale">
+        <PropertyRef Name="Fk_ProgramareId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RaportMed__Fk_Se__47DBAE45">
+    <End Type="PoliclinicaModel.ServiciiMedicale" Role="ServiciiMedicale" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.RaportMedical" Role="RaportMedical" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ServiciiMedicale">
+        <PropertyRef Name="ServiciuMedicalId" />
+      </Principal>
+      <Dependent Role="RaportMedical">
+        <PropertyRef Name="Fk_ServiciuMedicalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Utilizato__Fk_Ro__22AA2996">
+    <End Type="PoliclinicaModel.Roluri" Role="Roluri" Multiplicity="1" />
+    <End Type="PoliclinicaModel.Utilizatori" Role="Utilizatori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roluri">
+        <PropertyRef Name="RolId" />
+      </Principal>
+      <Dependent Role="Utilizatori">
+        <PropertyRef Name="Fk_RolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ServiciiM__Fk_Un__4316F928">
+    <End Type="PoliclinicaModel.UnitateMedicala" Role="UnitateMedicala" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="PoliclinicaModel.ServiciiMedicale" Role="ServiciiMedicale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitateMedicala">
+        <PropertyRef Name="UnitateMedicalaId" />
+      </Principal>
+      <Dependent Role="ServiciiMedicale">
+        <PropertyRef Name="Fk_UnitateMedicala" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Utilizato__Fk_Un__239E4DCF">
+    <End Type="PoliclinicaModel.UnitateMedicala" Role="UnitateMedicala" Multiplicity="1" />
+    <End Type="PoliclinicaModel.Utilizatori" Role="Utilizatori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitateMedicala">
+        <PropertyRef Name="UnitateMedicalaId" />
+      </Principal>
+      <Dependent Role="Utilizatori">
+        <PropertyRef Name="Fk_UnitateMedicalaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MedicSpecialitati">
+    <End Type="PoliclinicaModel.Medic" Role="Medic" Multiplicity="*" />
+    <End Type="PoliclinicaModel.Specialitati" Role="Specialitati" Multiplicity="*" />
+  </Association>
+  <Association Name="SpecialitateServicii">
+    <End Type="PoliclinicaModel.ServiciiMedicale" Role="ServiciiMedicale" Multiplicity="*" />
+    <End Type="PoliclinicaModel.Specialitati" Role="Specialitati" Multiplicity="*" />
+  </Association>
+  <ComplexType Name="LoginUserPoliclinica_Result">
+    <Property Type="Int32" Name="UtilizatorId" Nullable="false" />
+    <Property Type="String" Name="CNP" Nullable="false" MaxLength="13" />
+    <Property Type="String" Name="Nume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Prenume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Telefon" Nullable="false" MaxLength="31" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="IBAN" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="NumarContract" Nullable="false" />
+    <Property Type="DateTime" Name="DataAngajare" Nullable="false" />
+    <Property Type="Decimal" Name="Salar" Nullable="true" Precision="12" Scale="2" />
+    <Property Type="Int32" Name="Fk_FunctieId" Nullable="false" />
+    <Property Type="Int32" Name="Fk_RolId" Nullable="false" />
+    <Property Type="Int32" Name="Fk_UnitateMedicalaId" Nullable="false" />
+    <Property Type="String" Name="Adresa" Nullable="true" MaxLength="255" />
+    <Property Type="Int32" Name="Fk_UtilizatorId" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="255" />
+    <Property Type="Binary" Name="Parola" Nullable="false" MaxLength="64" />
+    <Property Type="DateTime" Name="DataInregistrare" Nullable="false" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="LoadUtilizatori_Result">
+    <Property Type="Int32" Name="UtilizatorId" Nullable="false" />
+    <Property Type="String" Name="CNP" Nullable="false" MaxLength="13" />
+    <Property Type="String" Name="Nume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Prenume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Telefon" Nullable="false" MaxLength="31" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="IBAN" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="NumarContract" Nullable="false" />
+    <Property Type="DateTime" Name="DataAngajare" Nullable="false" />
+    <Property Type="Decimal" Name="Salar" Nullable="true" Precision="12" Scale="2" />
+    <Property Type="Int32" Name="Fk_FunctieId" Nullable="false" />
+    <Property Type="Int32" Name="Fk_RolId" Nullable="false" />
+    <Property Type="Int32" Name="Fk_UnitateMedicalaId" Nullable="false" />
+    <Property Type="String" Name="Adresa" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CodulDeParafa" Nullable="true" MaxLength="255" />
+    <Property Type="Int32" Name="GradMedic" Nullable="true" />
+    <Property Type="Int32" Name="PostulDidactic" Nullable="true" />
+    <Property Type="Decimal" Name="ProcentServicii" Nullable="true" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="TitlulStiintific" Nullable="true" />
+    <Property Type="Int32" Name="GradAsistent" Nullable="true" />
+    <Property Type="Int32" Name="TipAsistent" Nullable="true" />
+    <Property Type="String" Name="Rol" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Functie" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Departament" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="LoadSpecialitatiUnitate_Result">
+    <Property Type="Int32" Name="SpecialitateId" Nullable="false" />
+    <Property Type="String" Name="Nume" Nullable="false" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="LoadMediciBySpecialitateId_Result">
+    <Property Type="Int32" Name="Fk_UtilizatorId" Nullable="false" />
+    <Property Type="String" Name="Nume" Nullable="false" MaxLength="511" />
+  </ComplexType>
+  <ComplexType Name="LoadPacientiMedic_Result">
+    <Property Type="String" Name="Nume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Prenume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="CNP" Nullable="false" MaxLength="13" />
+    <Property Type="String" Name="CardSanatate" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="PacientId" Nullable="false" />
+    <Property Type="String" Name="Ocupatie" Nullable="true" MaxLength="255" />
+    <Property Type="DateTime" Name="DataProgramare" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="Realizata" Nullable="true" />
+    <Property Type="String" Name="Competenta" Nullable="true" />
+    <Property Type="Int32" Name="Durata" Nullable="false" />
+    <Property Type="Decimal" Name="Pret" Nullable="false" Precision="6" Scale="4" />
+    <Property Type="Int32" Name="ServiciuMedicalId" Nullable="false" />
+    <Property Type="String" Name="Specialitate" Nullable="false" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="LoadIstoricPacient_Result">
+    <Property Type="String" Name="Nume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Prenume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="CNP" Nullable="false" MaxLength="13" />
+    <Property Type="String" Name="CardSanatate" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="PacientId" Nullable="false" />
+    <Property Type="String" Name="Ocupatie" Nullable="true" MaxLength="255" />
+    <Property Type="DateTime" Name="DataProgramare" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="Realizata" Nullable="true" />
+    <Property Type="String" Name="Competenta" Nullable="true" />
+    <Property Type="Int32" Name="Durata" Nullable="false" />
+    <Property Type="Decimal" Name="Pret" Nullable="false" Precision="6" Scale="4" />
+    <Property Type="Int32" Name="ServiciuMedicalId" Nullable="false" />
+    <Property Type="String" Name="Specialitate" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="NumePrenumeMedic" Nullable="true" MaxLength="255" />
+    <Property Type="DateTime" Name="DataConsultatie" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Diagnostic" Nullable="true" />
+    <Property Type="String" Name="Investigații" Nullable="true" />
+    <Property Type="String" Name="Istoric" Nullable="true" />
+    <Property Type="String" Name="Simptome" Nullable="true" />
+    <Property Type="Int32" Name="StatusConsultatie" Nullable="true" />
+    <Property Type="String" Name="Recomandări" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Cheltuieli_Result">
+    <Property Type="Int32" Name="UtilizatorId" Nullable="false" />
+    <Property Type="String" Name="Nume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Prenume" Nullable="false" MaxLength="255" />
+    <Property Type="DateTime" Name="DataAngajare" Nullable="false" />
+    <Property Type="Decimal" Name="Salar" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="ProcentServicii" Nullable="true" Precision="38" Scale="8" />
+    <Property Type="String" Name="Functie" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="IBAN" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="Venituri_Result">
+    <Property Type="Int32" Name="UtilizatorId" Nullable="false" />
+    <Property Type="String" Name="Nume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Prenume" Nullable="false" MaxLength="255" />
+    <Property Type="DateTime" Name="DataAngajare" Nullable="false" />
+    <Property Type="Int32" Name="Grad" Nullable="false" />
+    <Property Type="Int32" Name="PostulDidactic" Nullable="true" />
+    <Property Type="Int32" Name="Durata" Nullable="false" />
+    <Property Type="Decimal" Name="Pret" Nullable="true" Precision="10" Scale="2" />
+    <Property Type="String" Name="Specialitate" Nullable="false" MaxLength="255" />
+    <Property Type="DateTime" Name="DataProgramare" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="Realizata" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SalariiMedic_Result">
+    <Property Type="String" Name="Nume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Prenume" Nullable="false" MaxLength="255" />
+    <Property Type="DateTime" Name="DataAngajare" Nullable="false" />
+    <Property Type="String" Name="IBAN" Nullable="false" MaxLength="255" />
+    <Property Type="Decimal" Name="Salar" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="String" Name="CodulDeParafa" Nullable="false" MaxLength="255" />
+    <Property Type="Decimal" Name="ProcentServicii" Nullable="true" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="Pret" Nullable="true" Precision="10" Scale="2" />
+    <Property Type="DateTime" Name="DataProgramare" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Specialitate" Nullable="false" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="LoadPacientiAsistent_Result">
+    <Property Type="String" Name="Nume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Prenume" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="CNP" Nullable="false" MaxLength="13" />
+    <Property Type="String" Name="CardSanatate" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="PacientId" Nullable="false" />
+    <Property Type="String" Name="Ocupatie" Nullable="true" MaxLength="255" />
+    <Property Type="DateTime" Name="DataProgramare" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="Realizata" Nullable="true" />
+    <Property Type="String" Name="Competenta" Nullable="true" />
+    <Property Type="Int32" Name="Durata" Nullable="false" />
+    <Property Type="Decimal" Name="Pret" Nullable="true" Precision="10" Scale="2" />
+    <Property Type="Int32" Name="ServiciuMedicalId" Nullable="false" />
+    <Property Type="String" Name="Specialitate" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="NumeMedic" Nullable="false" MaxLength="511" />
+  </ComplexType>
+</Schema>
